@@ -1,4 +1,4 @@
-# Iniciar en Ciberseguridad
+# 🗺️ Iniciar en Ciberseguridad
 
 Debemos de tener presente que la Ciberseguridad es el <mark style="color:yellow;">DESARROLLO y APLICACIÓN</mark> de diversas áreas, entre las más conocidas tenemos a las Redes, Sistemas Operativos y Programación. Por tal motivo, es necesario tener unas bases sólidas en estas áreas para poder tener un correcto desempeño en este campo; caso contrario, seremos <mark style="color:purple;">dependientes</mark> de soluciones o tutoriales realizadas por otras personas.
 
