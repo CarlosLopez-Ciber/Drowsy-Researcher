@@ -45,3 +45,7 @@ Piensa en un **exploit** como el **vehículo** que abre la puerta, y el **payloa
 {% content-ref url="metasploit-modulos.md" %}
 [metasploit-modulos.md](metasploit-modulos.md)
 {% endcontent-ref %}
+
+{% content-ref url="metasploit-busqueda.md" %}
+[metasploit-busqueda.md](metasploit-busqueda.md)
+{% endcontent-ref %}
