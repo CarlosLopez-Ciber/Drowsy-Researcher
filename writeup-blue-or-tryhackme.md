@@ -513,6 +513,7 @@ use post/multi/manage/shell_to_meterpreter
 
 3. Verifica la configuración con:
 
+{% code overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```bash
 msf6 post(multi/manage/shell_to_meterpreter) > show options 
 
@@ -528,6 +529,7 @@ Module options (post/multi/manage/shell_to_meterpreter):
 
 View the full module info with the info, or info -d command.
 ```
+{% endcode %}
 
 4. **Respuesta:** la opción requerida a modificar es "SESSION"
 
