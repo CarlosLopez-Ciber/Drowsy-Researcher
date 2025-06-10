@@ -1,3 +1,8 @@
+---
+cover: .gitbook/assets/1338166.png
+coverY: 0
+---
+
 # 👋 Introducción
 
 ¡Hola! Soy Carlos Lopez y bienvenido a mi blog de ciberseguridad 🧠💻
