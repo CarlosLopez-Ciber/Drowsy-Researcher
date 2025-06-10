@@ -11,6 +11,7 @@
 ## Cursos
 
 * [Metasploit Framework](cursos/metasploit-framework/README.md)
+  * [Inicialización Correcta de Metasploit](cursos/metasploit-framework/inicializacion-correcta-de-metasploit.md)
   * [Metasploit - Módulos](cursos/metasploit-framework/metasploit-modulos.md)
   * [Metasploit - Búsqueda](cursos/metasploit-framework/metasploit-busqueda.md)
 
