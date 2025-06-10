@@ -8,6 +8,11 @@
 * [🥷 Seguridad ¿De qué?](seguridad-de-que/README.md)
   * [Cultura InfoSec](seguridad-de-que/cultura-infosec.md)
 
+## Tutoriales
+
+* [Metasploit Framework](tutoriales/metasploit-framework/README.md)
+  * [Metasploit - Módulos](tutoriales/metasploit-framework/metasploit-modulos.md)
+
 ## 🎮 CTFs
 
 * [OverTheWire](ctfs/overthewire.md)
