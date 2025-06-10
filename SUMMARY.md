@@ -12,6 +12,7 @@
 
 * [Metasploit Framework](tutoriales/metasploit-framework/README.md)
   * [Metasploit - Módulos](tutoriales/metasploit-framework/metasploit-modulos.md)
+  * [Metasploit - Búsqueda](tutoriales/metasploit-framework/metasploit-busqueda.md)
 
 ## 🎮 CTFs
 

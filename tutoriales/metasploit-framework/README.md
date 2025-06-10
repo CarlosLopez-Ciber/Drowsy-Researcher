@@ -1,5 +1,8 @@
 ---
 icon: viruses
+cover: >-
+  https://www.campusciberseguridad.com/wp-content/uploads/2024/11/Metasploit_La-herramienta-esencial-en-Ciberseguridad.jpg
+coverY: 0
 ---
 
 # Metasploit Framework
@@ -37,7 +40,7 @@ Piensa en un **exploit** como el **vehículo** que abre la puerta, y el **payloa
 
 ***
 
-## Índice
+## <mark style="color:yellow;">Índice</mark>
 
 {% content-ref url="metasploit-modulos.md" %}
 [metasploit-modulos.md](metasploit-modulos.md)
