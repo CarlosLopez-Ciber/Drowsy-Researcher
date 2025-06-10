@@ -15,4 +15,5 @@
 
 ***
 
-* [WriteUp: Blue | TryHackMe](writeup-blue-or-tryhackme.md)
+* [Try Hack Me](try-hack-me/README.md)
+  * [WriteUp: Blue | TryHackMe](try-hack-me/writeup-blue-or-tryhackme.md)
