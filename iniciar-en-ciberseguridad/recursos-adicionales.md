@@ -1,3 +1,7 @@
+---
+icon: book-font
+---
+
 # Recursos adicionales
 
 ## <mark style="color:yellow;">DIccionario de Ciberseguridad</mark>
