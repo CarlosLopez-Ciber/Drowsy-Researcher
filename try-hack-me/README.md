@@ -4,4 +4,6 @@
 
 ### Nivel: Fácil&#x20;
 
-[writeup-blue-or-tryhackme.md](writeup-blue-or-tryhackme.md "mention")
+{% content-ref url="writeup-blue-or-tryhackme.md" %}
+[writeup-blue-or-tryhackme.md](writeup-blue-or-tryhackme.md)
+{% endcontent-ref %}
