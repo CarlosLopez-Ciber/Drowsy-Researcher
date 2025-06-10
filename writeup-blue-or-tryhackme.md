@@ -103,6 +103,7 @@ El propósito es identificar cuántos puertos abiertos tienen un número inferio
 
 Una vez finalizado el escaneo, se presenta la siguiente información:
 
+{% code title="" overflow="wrap" lineNumbers="true" fullWidth="true" %}
 ```bash
 PORT      STATE SERVICE        VERSION
 135/tcp   open  msrpc          Microsoft Windows RPC
@@ -139,6 +140,7 @@ PORT      STATE SERVICE        VERSION
 49158/tcp open  msrpc          Microsoft Windows RPC
 49159/tcp open  msrpc          Microsoft Windows RPC
 ```
+{% endcode %}
 
 ***
 
