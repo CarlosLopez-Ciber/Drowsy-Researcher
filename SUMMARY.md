@@ -12,3 +12,7 @@
 
 * [OverTheWire](ctfs/overthewire.md)
 * [HackMyVM](ctfs/hackmyvm.md)
+
+***
+
+* [WriteUp: Blue | TryHackMe](writeup-blue-or-tryhackme.md)
