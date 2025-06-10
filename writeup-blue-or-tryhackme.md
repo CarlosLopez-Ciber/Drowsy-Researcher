@@ -844,11 +844,11 @@ Una vez que John termine de procesar el hash, puedes ver la contraseña crackead
 john --show hash.txt
 ```
 
-#### Task 5: Find flags!
+## <mark style="color:blue;">Task 5: Find flags!</mark>
 
 Encuentra las tres banderas colocadas en esta máquina. No son banderas tradicionales, sino que representan ubicaciones clave dentro del sistema Windows. ¡Usa las pistas a continuación para completar esta sala!
 
-**1. Flag1?&#x20;**_**This flag can be found at the system root.**_
+### <mark style="color:purple;">**1. Flag1?**</mark><mark style="color:purple;">**&#x20;**</mark>_<mark style="color:purple;">**This flag can be found at the system root.**</mark>_
 
 > **En español**\
 > Bandera 1: _Esta bandera se encuentra en la raíz del sistema._
