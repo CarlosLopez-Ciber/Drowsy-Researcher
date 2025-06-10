@@ -8,11 +8,11 @@
 * [🥷 Seguridad ¿De qué?](seguridad-de-que/README.md)
   * [Cultura InfoSec](seguridad-de-que/cultura-infosec.md)
 
-## Tutoriales
+## Cursos
 
-* [Metasploit Framework](tutoriales/metasploit-framework/README.md)
-  * [Metasploit - Módulos](tutoriales/metasploit-framework/metasploit-modulos.md)
-  * [Metasploit - Búsqueda](tutoriales/metasploit-framework/metasploit-busqueda.md)
+* [Metasploit Framework](cursos/metasploit-framework/README.md)
+  * [Metasploit - Módulos](cursos/metasploit-framework/metasploit-modulos.md)
+  * [Metasploit - Búsqueda](cursos/metasploit-framework/metasploit-busqueda.md)
 
 ## 🎮 CTFs
 
