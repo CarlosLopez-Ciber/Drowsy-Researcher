@@ -11,6 +11,8 @@ coverY: 0
 
 <mark style="color:yellow;">**Metasploit Framework**</mark> es una plataforma de código abierto diseñada para el desarrollo, prueba y ejecución de <mark style="color:yellow;">**exploits**</mark> contra sistemas remotos. Permite a **pentesters**, **red teamers** y **profesionales de seguridad** encontrar, validar y explotar vulnerabilidades de forma controlada.
 
+Documentación de Metasploit: [https://docs.metasploit.com/](https://docs.metasploit.com/)
+
 ### <mark style="color:green;">Terminología</mark>
 
 #### <mark style="color:red;">Exploit</mark>
@@ -42,8 +44,16 @@ Piensa en un **exploit** como el **vehículo** que abre la puerta, y el **payloa
 
 ## <mark style="color:yellow;">Índice</mark>
 
+{% content-ref url="inicializacion-correcta-de-metasploit.md" %}
+[inicializacion-correcta-de-metasploit.md](inicializacion-correcta-de-metasploit.md)
+{% endcontent-ref %}
+
 {% content-ref url="metasploit-modulos.md" %}
 [metasploit-modulos.md](metasploit-modulos.md)
+{% endcontent-ref %}
+
+{% content-ref url="metasploit-comandos-basicos.md" %}
+[metasploit-comandos-basicos.md](metasploit-comandos-basicos.md)
 {% endcontent-ref %}
 
 {% content-ref url="metasploit-busqueda.md" %}
