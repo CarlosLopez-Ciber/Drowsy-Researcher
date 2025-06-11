@@ -6,14 +6,4 @@
 
 ### <mark style="color:yellow;">Comandos básicos de Meterpreter(se verá más adelante)</mark>
 
-| **Comando**             | **Uso**                                      | **Ejemplo**               |
-| ----------------------- | -------------------------------------------- | ------------------------- |
-| `sysinfo`               | Obtener información del sistema comprometido | `meterpreter> sysinfo`    |
-| `ifconfig` / `ipconfig` | Listar interfaces de red                     | `meterpreter> ifconfig`   |
-| `arp`                   | Ver IPs y MACs conectadas al objetivo        | `meterpreter> arp`        |
-| `background`            | Enviar sesión activa a segundo plano         | `meterpreter> background` |
-| `shell`                 | Abrir shell de comandos                      | `meterpreter> shell`      |
-| `getuid`                | Obtener nombre de usuario actual             | `meterpreter> getuid`     |
-| `getsystem`             | Escalar privilegios a SYSTEM                 | `meterpreter> getsystem`  |
-| `getpid`                | Obtener el PID del proceso de Meterpreter    | `meterpreter> getpid`     |
-| `ps`                    | Listar todos los procesos activos            | `meterpreter> ps`         |
+<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><strong>Comando</strong></td><td><strong>Uso</strong></td><td><strong>Ejemplo</strong></td></tr><tr><td><code>sysinfo</code></td><td>Obtener información del sistema comprometido</td><td><code>meterpreter> sysinfo</code></td></tr><tr><td><code>ifconfig</code> / <code>ipconfig</code></td><td>Listar interfaces de red</td><td><code>meterpreter> ifconfig</code></td></tr><tr><td><code>arp</code></td><td>Ver IPs y MACs conectadas al objetivo</td><td><code>meterpreter> arp</code></td></tr><tr><td><code>background</code></td><td>Enviar sesión activa a segundo plano</td><td><code>meterpreter> background</code></td></tr><tr><td><code>shell</code></td><td>Abrir shell de comandos</td><td><code>meterpreter> shell</code></td></tr><tr><td><code>getuid</code></td><td>Obtener nombre de usuario actual</td><td><code>meterpreter> getuid</code></td></tr><tr><td><code>getsystem</code></td><td>Escalar privilegios a SYSTEM</td><td><code>meterpreter> getsystem</code></td></tr><tr><td><code>getpid</code></td><td>Obtener el PID del proceso de Meterpreter</td><td><code>meterpreter> getpid</code></td></tr><tr><td><code>ps</code></td><td>Listar todos los procesos activos</td><td><code>meterpreter> ps</code></td></tr></tbody></table>
