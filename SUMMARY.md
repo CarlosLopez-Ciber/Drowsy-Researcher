@@ -10,7 +10,8 @@
 
 ## 🔏 Seguridad de la Información
 
-* [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion.md)
+* [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/README.md)
+  * [La Tríada CIA](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-cia.md)
 
 ## Cursos
 
