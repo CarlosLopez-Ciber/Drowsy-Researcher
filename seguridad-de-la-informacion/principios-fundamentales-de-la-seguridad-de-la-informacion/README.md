@@ -9,4 +9,5 @@ coverY: 0
 3. [la-triada-antagonica-dad.md](la-triada-antagonica-dad.md "mention")&#x20;
 4. [marco-de-ciberseguridad-del-nist.md](marco-de-ciberseguridad-del-nist.md "mention")
 5. [gestion-y-objetivos-de-los-controles-de-seguridad.md](gestion-y-objetivos-de-los-controles-de-seguridad.md "mention")
-6. [amenazas-vulnerabilidades-y-riesgos.md](amenazas-vulnerabilidades-y-riesgos.md "mention")
+6. [amenazas-vulnerabilidades-y-riesgos](amenazas-vulnerabilidades-y-riesgos/ "mention")
+   1.
