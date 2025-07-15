@@ -2,7 +2,7 @@
 
 <h2 align="center">Definición de Controles y Contramedidas</h2>
 
-En el ámbito de la ciberseguridad, es fundamental comprender la diferencia y el propósito de los controles y las contramedidas como elementos clave en la gestión del riesgo.
+<p align="center">En el ámbito de la ciberseguridad, es fundamental comprender la diferencia y el propósito de los controles y las contramedidas como elementos clave en la gestión del riesgo.</p>
 
 ### &#x20;Controles de Seguridad
 
