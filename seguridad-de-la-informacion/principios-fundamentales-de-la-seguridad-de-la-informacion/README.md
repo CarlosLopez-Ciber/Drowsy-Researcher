@@ -1,9 +1,13 @@
+---
+coverY: 0
+---
+
 # Principios Fundamentales de la Seguridad de la Información
 
 1. [la-triada-cia.md](la-triada-cia.md "mention")
 2. [el-marco-de-soporte-aaa.md](el-marco-de-soporte-aaa.md "mention")
 
-### 3.0&#x20;
+
 
 ### 4.0 La Tríada Antagónica DAD: Los Objetivos del Adversario
 
