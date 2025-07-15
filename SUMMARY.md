@@ -21,6 +21,9 @@
     * [Tipologías de Actores de Amenaza](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/tipologias-de-actores-de-amenaza.md)
     * [Gestión de la Superficie y Vectores de Ataque](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/gestion-de-la-superficie-y-vectores-de-ataque.md)
     * [Software Vulnerable y Vectores de Red](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/software-vulnerable-y-vectores-de-red.md)
+    * [Vectores de Ataque Basados en Señuelos y Mensajes](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/vectores-de-ataque-basados-en-senuelos-y-mensajes.md)
+    * [Gestión de Riesgos de Terceros](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/gestion-de-riesgos-de-terceros.md)
+  * [Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social.md)
 
 ## Cursos
 

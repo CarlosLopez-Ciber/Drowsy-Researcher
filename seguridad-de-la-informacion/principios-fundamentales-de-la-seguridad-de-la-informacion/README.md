@@ -13,3 +13,7 @@ coverY: 0
    1. [atributos-de-los-actores-de-amenaza.md](amenazas-vulnerabilidades-y-riesgos/atributos-de-los-actores-de-amenaza.md "mention")
    2. [tipologias-de-actores-de-amenaza.md](amenazas-vulnerabilidades-y-riesgos/tipologias-de-actores-de-amenaza.md "mention")
    3. [gestion-de-la-superficie-y-vectores-de-ataque.md](amenazas-vulnerabilidades-y-riesgos/gestion-de-la-superficie-y-vectores-de-ataque.md "mention")
+   4. [software-vulnerable-y-vectores-de-red.md](amenazas-vulnerabilidades-y-riesgos/software-vulnerable-y-vectores-de-red.md "mention")
+   5. [vectores-de-ataque-basados-en-senuelos-y-mensajes.md](amenazas-vulnerabilidades-y-riesgos/vectores-de-ataque-basados-en-senuelos-y-mensajes.md "mention")
+   6. [gestion-de-riesgos-de-terceros.md](amenazas-vulnerabilidades-y-riesgos/gestion-de-riesgos-de-terceros.md "mention")
+7. [ingenieria-social.md](ingenieria-social.md "mention")
