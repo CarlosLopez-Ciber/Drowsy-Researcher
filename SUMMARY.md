@@ -19,6 +19,7 @@
   * [Amenazas, Vulnerabilidades y Riesgos](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/README.md)
     * [Atributos de los Actores de Amenaza](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/atributos-de-los-actores-de-amenaza.md)
     * [Tipologías de Actores de Amenaza](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/tipologias-de-actores-de-amenaza.md)
+    * [Gestión de la Superficie y Vectores de Ataque](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/gestion-de-la-superficie-y-vectores-de-ataque.md)
 
 ## Cursos
 
