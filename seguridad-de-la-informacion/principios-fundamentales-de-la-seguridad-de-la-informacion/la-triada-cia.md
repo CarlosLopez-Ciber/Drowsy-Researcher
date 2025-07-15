@@ -1,10 +1,10 @@
 # La Tríada CIA
 
-## 1.0 El Modelo Canónico de Seguridad
+## El Modelo Canónico de Seguridad
 
 La Tríada CIA es el modelo base para el diseño de políticas y sistemas de seguridad. Sus tres componentes son **Confidencialidad, Integridad y Disponibilidad**.
 
-### 1.1 Confidencialidad (Confidentiality)
+### Confidencialidad (Confidentiality)
 
 La confidencialidad es el principio que garantiza que la información no sea divulgada a individuos, entidades o procesos no autorizados. Su objetivo es prevenir el acceso no permitido a datos sensibles.
 
@@ -15,7 +15,7 @@ La confidencialidad es el principio que garantiza que la información no sea div
 
     Un informe financiero se cifra mediante el estándar AES-256 antes de ser enviado por correo electrónico. Aunque el correo sea interceptado, un atacante no podrá leer el contenido del informe sin la clave de descifrado, preservando así su confidencialidad.
 
-### 1.2 Integridad (Integrity)
+### Integridad (Integrity)
 
 La integridad se refiere a mantener la consistencia, exactitud y fiabilidad de los datos a lo largo de todo su ciclo de vida. Los datos no deben ser alterados de forma no autorizada durante su almacenamiento, procesamiento o transmisión.
 
@@ -27,7 +27,7 @@ La integridad se refiere a mantener la consistencia, exactitud y fiabilidad de l
 
     Al descargar un archivo de instalación de software, un usuario calcula su hash SHA-256 y lo compara con el valor publicado en el sitio web oficial del desarrollador. Si los hashes coinciden, se verifica la integridad del archivo, asegurando que no ha sido modificado ni corrompido con malware.
 
-### 1.3 Disponibilidad (Availability)
+### Disponibilidad (Availability)
 
 La disponibilidad asegura que los sistemas, redes y datos estén operativos y accesibles para los usuarios autorizados cuando estos los requieran.
 
