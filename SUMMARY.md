@@ -16,6 +16,7 @@
   * [La Tríada Antagónica DAD](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-antagonica-dad.md)
   * [Marco de Ciberseguridad del NIST](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/marco-de-ciberseguridad-del-nist.md)
   * [Gestión y Objetivos de los Controles de Seguridad](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/gestion-y-objetivos-de-los-controles-de-seguridad.md)
+  * [Amenazas, Vulnerabilidades y Riesgos](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos.md)
 
 ## Cursos
 
