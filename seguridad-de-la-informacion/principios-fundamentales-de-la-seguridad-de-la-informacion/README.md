@@ -1,33 +1,9 @@
 # Principios Fundamentales de la Seguridad de la Información
 
 1. [la-triada-cia.md](la-triada-cia.md "mention")
+2. [el-marco-de-soporte-aaa.md](el-marco-de-soporte-aaa.md "mention")
 
-### 2.0 El Marco de Soporte AAA: Gestión de Identidad y Acceso
-
-Para implementar eficazmente la Tríada CIA, se utiliza el marco AAA: **Autenticación, Autorización y Trazabilidad (Accounting)**.
-
-* **2.1 Autenticación (Authentication):** Es el proceso de **verificar la identidad** de un usuario, sistema o servicio. Responde a la pregunta: "¿Quién eres?".
-* **2.2 Autorización (Authorization):** Una vez autenticada la identidad, la autorización es el proceso de **otorgar o denegar permisos** específicos a recursos. Responde a la pregunta: "¿Qué tienes permitido hacer?".
-* **2.3 Trazabilidad (Accounting / Accountability):** Es el registro y seguimiento de las acciones realizadas por una identidad autenticada. Responde a la pregunta: "¿Qué hiciste?".
-*   Ejemplo:
-
-    Un empleado ingresa su nombre de usuario y contraseña, y luego un código de su aplicación móvil para acceder a la red corporativa (Autenticación). Una vez dentro, su perfil de usuario solo le permite acceder a las carpetas del departamento de Marketing, pero no a las de Finanzas (Autorización). Cada archivo que abre o modifica queda registrado en los logs del servidor con su nombre de usuario y la marca de tiempo (Trazabilidad).
-
-### 3.0 Conceptos Extendidos de la Seguridad Moderna
-
-Con la evolución del panorama digital, la Tríada CIA se ha ampliado para incluir otros principios cruciales.
-
-#### 3.1 Privacidad (Privacy)
-
-La privacidad es el derecho de un individuo a controlar cómo se recopila, utiliza, almacena y comparte su información personal (PII - Personally Identifiable Information). Está estrechamente relacionada con la confidencialidad, pero se enfoca en el aspecto del consentimiento y el control del titular de los datos, a menudo regulado por leyes como el GDPR o la CCPA.
-
-#### 3.2 No Repudio (Non-repudiation)
-
-El no repudio es la garantía de que un sujeto (usuario o sistema) no puede negar la autoría de una acción previamente realizada. Proporciona una prueba irrefutable del origen e integridad de los datos.
-
-*   Ejemplo:
-
-    Cuando una persona firma un contrato digital utilizando una firma electrónica basada en certificados, se crea una prueba criptográfica que la vincula inequívocamente a ese documento. Dicha persona no puede negar ("repudiar") haber firmado el contrato, ya que solo su clave privada única podría haber generado esa firma.
+### 3.0&#x20;
 
 ### 4.0 La Tríada Antagónica DAD: Los Objetivos del Adversario
 
