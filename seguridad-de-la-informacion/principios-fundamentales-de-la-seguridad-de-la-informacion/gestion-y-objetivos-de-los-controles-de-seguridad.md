@@ -76,3 +76,66 @@ El proceso para desplegar una línea base de seguridad de forma efectiva es cíc
 3. **Publicar** la configuración finalizada para su revisión y aprobación.
 4. **Implementar** los controles en el entorno de producción.
 5. **Evaluar y Monitorear** continuamente el rendimiento de los controles para asegurar su eficacia y realizar ajustes si es necesario.
+
+<h2 align="center">Clasificación Funcional de los Controles de Seguridad</h2>
+
+<p align="center">Los controles de seguridad se pueden clasificar según su función operativa dentro de una estrategia de defensa. Esta clasificación ayuda a las organizaciones a implementar un enfoque de seguridad por capas (Defensa en Profundidad), abordando el riesgo antes, durante y después de un incidente.</p>
+
+### 1.0 Controles Preventivos (Preventive Controls)
+
+Estos controles están diseñados para **impedir activamente** que un incidente de seguridad ocurra. Su objetivo es eliminar o reducir la probabilidad de que una amenaza pueda explotar una vulnerabilidad.
+
+* **Objetivo:** Prevenir el éxito de un ataque.
+* **Ejemplos:**
+  * **Listas de Control de Acceso (ACLs):** Reglas en firewalls y routers que bloquean el tráfico no autorizado.
+  * **Hardening de Sistemas:** Proceso de configuración segura de un sistema para reducir su superficie de ataque (ej. deshabilitar puertos y servicios innecesarios).
+  * **Software Antimalware:** Escanea y bloquea la ejecución de código malicioso.
+  * **Políticas y Procedimientos (SOPs):** Controles administrativos que dictan el comportamiento seguro de los usuarios.
+
+### 2.0 Controles Detectivos (Detective Controls)
+
+Estos controles están diseñados para **identificar, registrar y alertar** sobre actividades maliciosas o anómalas, ya sean intentos fallidos o intrusiones exitosas. No previenen el ataque, pero proporcionan la visibilidad necesaria para iniciar una respuesta.
+
+* **Objetivo:** Descubrir un ataque en curso o uno que ya ha ocurrido.
+* **Ejemplos:**
+  * **Logs y Auditorías:** Registros de eventos del sistema, aplicaciones y redes que pueden ser analizados en busca de actividad sospechosa.
+  * **Sistemas de Detección de Intrusiones (IDS):** Sensores que monitorizan el tráfico de red en busca de patrones de ataque conocidos.
+  * **Sistemas de Gestión de Información y Eventos de Seguridad (SIEM):** Correlacionan y analizan logs de múltiples fuentes para detectar incidentes.
+
+### 3.0 Controles Correctivos (Corrective Controls)
+
+Estos controles se activan **después de que un incidente ha ocurrido** para limitar el daño, remediar los sistemas afectados y restaurar las operaciones a un estado normal y seguro.
+
+* **Objetivo:** Reducir el impacto de un incidente y recuperar los sistemas.
+* **Ejemplos:**
+  * **Restauración desde Copias de Seguridad (Backups):** Recuperar datos y sistemas a un estado previo al incidente.
+  * **Gestión de Parches:** Aplicar parches de seguridad a una vulnerabilidad que fue explotada.
+  * **Planes de Respuesta a Incidentes (IRP):** Procedimientos que guían al equipo de seguridad en la erradicación de la amenaza y la recuperación del sistema.
+
+### 4.0 Controles Físicos (Physical Controls)
+
+Estos controles protegen el acceso físico a las instalaciones, la infraestructura y el hardware de una organización. Son la primera línea de defensa para prevenir el robo, daño o acceso no autorizado a los activos de TI.
+
+* **Objetivo:** Proteger el entorno físico de la organización.
+* **Ejemplos:**
+  * **Guardias de seguridad y perros guardianes.**
+  * **Sistemas de videovigilancia (CCTV) y alarmas.**
+  * **Cerraduras, torniquetes y control de acceso con tarjetas de identificación.**
+
+### 5.0 Controles Disuasorios (Deterrent Controls)
+
+Estos controles tienen un **efecto psicológico** sobre los potenciales atacantes, desmotivándolos de intentar una intrusión. Su eficacia radica en la percepción del riesgo o del esfuerzo requerido para el atacante.
+
+* **Objetivo:** Desmotivar a un atacante para que no inicie un ataque.
+* **Ejemplos:**
+  * **Señales de advertencia:** Carteles como "Propiedad Privada" o "Zona Videovigilada".
+  * **Banners de inicio de sesión:** Mensajes que advierten sobre las sanciones legales por el acceso no autorizado a un sistema informático.
+
+### 6.0 Controles Compensatorios (Compensating Controls)
+
+Estos controles se implementan como una **alternativa** cuando un control primario recomendado no es factible o es demasiado costoso de aplicar. Deben proporcionar un nivel de protección equivalente o superior, aunque a través de una tecnología o metodología diferente.
+
+* **Objetivo:** Cubrir una brecha de seguridad cuando el control principal no puede ser utilizado.
+*   Ejemplo:
+
+    Una organización utiliza un sistema industrial (SCADA) antiguo que no es compatible con software antimalware moderno (control primario). Como control compensatorio, aíslan el sistema en un segmento de red separado (microsegmentación) y monitorizan de forma intensiva todo el tráfico de red que entra y sale de dicho segment
