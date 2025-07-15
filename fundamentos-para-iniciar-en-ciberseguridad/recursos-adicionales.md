@@ -1,5 +1,6 @@
 ---
 icon: book-font
+coverY: 0
 ---
 
 # Recursos adicionales

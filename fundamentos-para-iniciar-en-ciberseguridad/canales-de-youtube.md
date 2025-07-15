@@ -1,5 +1,6 @@
 ---
 icon: youtube
+coverY: 0
 ---
 
 # Canales de YouTube
