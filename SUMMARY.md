@@ -13,6 +13,9 @@
 * [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/README.md)
   * [La Tríada CIA](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-cia.md)
   * [El Marco de Soporte AAA](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/el-marco-de-soporte-aaa.md)
+  * [La Tríada Antagónica DAD](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-antagonica-dad.md)
+  * [Marco de Ciberseguridad del NIST](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/marco-de-ciberseguridad-del-nist.md)
+  * [Gestión y Objetivos de los Controles de Seguridad](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/gestion-y-objetivos-de-los-controles-de-seguridad.md)
 
 ## Cursos
 
