@@ -8,6 +8,10 @@
 * [🥷 Seguridad ¿De qué?](seguridad-de-que/README.md)
   * [Cultura InfoSec](seguridad-de-que/cultura-infosec.md)
 
+## 🔏 Seguridad de la Información
+
+* [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion.md)
+
 ## Cursos
 
 * [Metasploit Framework](cursos/metasploit-framework/README.md)
