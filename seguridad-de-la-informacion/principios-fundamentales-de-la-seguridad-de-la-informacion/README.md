@@ -16,5 +16,5 @@ coverY: 0
    4. [software-vulnerable-y-vectores-de-red.md](amenazas-vulnerabilidades-y-riesgos/software-vulnerable-y-vectores-de-red.md "mention")
    5. [vectores-de-ataque-basados-en-senuelos-y-mensajes.md](amenazas-vulnerabilidades-y-riesgos/vectores-de-ataque-basados-en-senuelos-y-mensajes.md "mention")
    6. [gestion-de-riesgos-de-terceros.md](amenazas-vulnerabilidades-y-riesgos/gestion-de-riesgos-de-terceros.md "mention")
-7. [ingenieria-social](ingenieria-social/ "mention")
-   1.
+7. [ingenieria-social.md](ingenieria-social.md "mention")
+   1. [tecnicas-de-ingenieria-social.md](ingenieria-social/tecnicas-de-ingenieria-social.md "mention")

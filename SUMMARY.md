@@ -23,7 +23,7 @@
     * [Software Vulnerable y Vectores de Red](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/software-vulnerable-y-vectores-de-red.md)
     * [Vectores de Ataque Basados en Señuelos y Mensajes](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/vectores-de-ataque-basados-en-senuelos-y-mensajes.md)
     * [Gestión de Riesgos de Terceros](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/gestion-de-riesgos-de-terceros.md)
-  * [Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social/README.md)
+  * [Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social.md)
     * [Técnicas de Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social/tecnicas-de-ingenieria-social.md)
 
 ## Cursos
