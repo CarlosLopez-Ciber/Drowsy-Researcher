@@ -19,7 +19,7 @@ Una **amenaza** es cualquier evento o actor con el potencial de causar daño a u
 
 * **Naturaleza:** Es un agente o evento externo con intención o potencial malicioso.
 * **Componentes:** Una amenaza se compone de un **actor de amenaza** (ej. un ciberdelincuente, un empleado descontento, un desastre natural) y un **vector de ataque** (el método o camino utilizado para explotar una vulnerabilidad, ej. un correo de phishing, un sitio web malicioso, una unidad USB infectada).
-*   Ejemplo Práctico:
+*   Ejemplo:
 
     Un grupo de ciberdelincuentes (actor de amenaza) que busca activamente servidores web para explotar vulnerabilidades y desplegar ransomware (intención). Este grupo representa una amenaza constante en internet, independientemente de si una organización específica tiene o no vulnerabilidades en sus sistemas.
 
