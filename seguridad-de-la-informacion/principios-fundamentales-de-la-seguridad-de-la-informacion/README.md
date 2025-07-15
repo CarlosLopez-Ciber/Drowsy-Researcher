@@ -11,3 +11,4 @@ coverY: 0
 5. [gestion-y-objetivos-de-los-controles-de-seguridad.md](gestion-y-objetivos-de-los-controles-de-seguridad.md "mention")
 6. [amenazas-vulnerabilidades-y-riesgos](amenazas-vulnerabilidades-y-riesgos/ "mention")
    1. [atributos-de-los-actores-de-amenaza.md](amenazas-vulnerabilidades-y-riesgos/atributos-de-los-actores-de-amenaza.md "mention")
+   2. [tipologias-de-actores-de-amenaza.md](amenazas-vulnerabilidades-y-riesgos/tipologias-de-actores-de-amenaza.md "mention")

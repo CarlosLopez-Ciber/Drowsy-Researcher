@@ -18,6 +18,7 @@
   * [Gestión y Objetivos de los Controles de Seguridad](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/gestion-y-objetivos-de-los-controles-de-seguridad.md)
   * [Amenazas, Vulnerabilidades y Riesgos](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/README.md)
     * [Atributos de los Actores de Amenaza](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/atributos-de-los-actores-de-amenaza.md)
+    * [Tipologías de Actores de Amenaza](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/amenazas-vulnerabilidades-y-riesgos/tipologias-de-actores-de-amenaza.md)
 
 ## Cursos
 
