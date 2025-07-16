@@ -56,6 +56,6 @@ Piensa en un **exploit** como el **vehículo** que abre la puerta, y el **payloa
 [metasploit-comandos-basicos.md](metasploit-comandos-basicos.md)
 {% endcontent-ref %}
 
-{% content-ref url="metasploit-busqueda.md" %}
-[metasploit-busqueda.md](metasploit-busqueda.md)
+{% content-ref url="metasploit-comandos-de-busqueda.md" %}
+[metasploit-comandos-de-busqueda.md](metasploit-comandos-de-busqueda.md)
 {% endcontent-ref %}
