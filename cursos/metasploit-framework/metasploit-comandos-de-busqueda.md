@@ -1,4 +1,6 @@
-# Metasploit - Búsqueda
+# Metasploit - Comandos de Búsqueda
+
+Metasploit Framework proporciona una potente funcionalidad de búsqueda (`search`) que permite localizar módulos específicos dentro de su extensa base de datos. Esta capacidad es fundamental para identificar rápidamente los _exploits_, _payloads_ o herramientas auxiliares más adecuados para una situación determinada. La búsqueda se realiza utilizando una serie de **parámetros de filtrado** que permiten refinar los resultados.
 
 | Parámetro   | ¿Qué busca?                                                            | Ejemplo                   |
 | ----------- | ---------------------------------------------------------------------- | ------------------------- |
