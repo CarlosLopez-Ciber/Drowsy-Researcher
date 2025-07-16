@@ -33,6 +33,7 @@
   * [Metasploit - Módulos](cursos/metasploit-framework/metasploit-modulos.md)
   * [Metasploit - Comandos básicos](cursos/metasploit-framework/metasploit-comandos-basicos.md)
   * [Metasploit - Comandos de Búsqueda](cursos/metasploit-framework/metasploit-comandos-de-busqueda.md)
+  * [Gestión de Entornos de Trabajo (Workspaces)](cursos/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
 
 ## 🎮 CTFs
 
