@@ -59,3 +59,7 @@ Piensa en un **exploit** como el **vehículo** que abre la puerta, y el **payloa
 {% content-ref url="metasploit-comandos-de-busqueda.md" %}
 [metasploit-comandos-de-busqueda.md](metasploit-comandos-de-busqueda.md)
 {% endcontent-ref %}
+
+{% content-ref url="gestion-de-entornos-de-trabajo-workspaces.md" %}
+[gestion-de-entornos-de-trabajo-workspaces.md](gestion-de-entornos-de-trabajo-workspaces.md)
+{% endcontent-ref %}
