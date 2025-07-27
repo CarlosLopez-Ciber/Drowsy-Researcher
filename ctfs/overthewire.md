@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # OverTheWire
 
 > Enlace a la plataforma: [https://overthewire.org/wargames](https://overthewire.org/wargames/bandit/)
