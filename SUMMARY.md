@@ -40,5 +40,6 @@
 * [OverTheWire](ctfs/overthewire.md)
 * [HackMyVM](ctfs/hackmyvm/README.md)
   * [WriteUp: Gift | HackMyVM](ctfs/hackmyvm/writeup-gift-or-hackmyvm.md)
+  * [WriteUp: LookUp | HackMyVM](ctfs/hackmyvm/writeup-lookup-or-hackmyvm.md)
 * [Try Hack Me](ctfs/try-hack-me/README.md)
   * [WriteUp: Blue | TryHackMe](ctfs/try-hack-me/writeup-blue-or-tryhackme.md)
