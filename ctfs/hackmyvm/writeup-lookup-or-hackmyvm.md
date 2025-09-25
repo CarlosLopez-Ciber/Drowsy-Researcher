@@ -112,25 +112,10 @@ Con esto podemos realizar un ataque de fuerza bruta para tratar de identificar l
 Para este caso utilizaremos Hydra para realizar la fuerza bruta:
 
 ```bash
-hydra -l admin -P /usr/share/wordlists/rockyou.txt lookup.thm http-post-form "/login.php:username=^USER^&password=^PASS^:F=Wrong password" -V
+hydra -l admin -P /usr/share/wordlists/rockyou.txt lookup.hmv http-post-form "/login.php:username=^USER^&password=^PASS^:F=Wrong password" -V
 ```
 
-Luego de varios intentos y varios minutos, hydra nos muestra el siguiente resultado:
-
-```bash
-[RE-ATTEMPT] target http://lookup.thm - login "admin" - pass "punkin1" - 11800 of 14344404 [child 6] (0/5)
-[RE-ATTEMPT] target http://lookup.thm - login "admin" - pass "peaches2" - 11800 of 14344404 [child 7] (0/5)
-[RE-ATTEMPT] target http://lookup.thm - login "admin" - pass "miming" - 11800 of 14344406 [child 2] (0/7)
-[RE-ATTEMPT] target http://lookup.thm - login "admin" - pass "me2you" - 11800 of 14344406 [child 8] (0/7)
- [80][http-post-form] host: 10.201.1.241   login: admin   password: ribeiro
-```
-
-Sin embargo, al aplicar estas credenciales en el formulario nos aparece el mensaje:
-
-```
-Wrong username or password. Please try again.
-Redirecting in 3 seconds.
-```
+SIn embargo, no encontramos nada relevante.
 
 En este caso, como lo obtenido por hydra para la búsqueda del password no nos ayuda, podemos realizar lo mismo para encontrar algún otro `Username`.
 
