@@ -13,7 +13,7 @@ PORT   STATE SERVICE VERSION
 |_  256 ec:0d:5a:40:2b:0b:fb:23:0c:f7:0e:f2:23:b9:43:5b (ED25519)
 80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
 |_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Did not follow redirect to http://lookup.thm
+|_http-title: Did not follow redirect to http://lookup.hmv
 Device type: general purpose
 Running: Linux 4.X
 OS CPE: cpe:/o:linux:linux_kernel:4.15
@@ -32,7 +32,7 @@ Para esta configuración hacemos lo siguiente:
 $ nano /etc/hosts
 
 # Luego añadimos la redirección
-192.168.56.21     http://lookup.thm
+192.168.56.21     http://lookup.hmv
 ```
 
 Una vez realizado esto, ingresamos a la plataforma y tendremos lo siguiente:
