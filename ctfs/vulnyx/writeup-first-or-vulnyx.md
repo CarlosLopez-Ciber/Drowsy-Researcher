@@ -1,6 +1,6 @@
 # WriteUp: First | VulNyx
 
-Cuando iniciamos la VM no encontramos con un mensaje que dice `Welcome to my Raspberry!`, por lo que supongo que es el sistema operativo de esta microcomputadora.
+Cuando iniciamos la VM nos encontramos con un mensaje que dice `Welcome to my Raspberry!`, por lo que supongo que es el sistema operativo de esta microcomputadora.
 
 Luego de ello, en mi kali, realizo un primer escaneo con nmap para el descubrimiento de puertos:
 
