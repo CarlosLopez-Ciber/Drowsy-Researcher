@@ -95,7 +95,7 @@ Debido a que la opción `COOKIE` es requerido, y no la tenemos, no la podemos pr
 
 Ahora veamos la web alojada en el puerto 80:
 
-<figure><img src="../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 Pues nada relevante con esto, haremos fuerza bruta con gobuster en búsqueda de más información:
 

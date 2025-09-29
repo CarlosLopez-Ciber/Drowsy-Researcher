@@ -44,5 +44,6 @@
   * [WriteUp: Visions | HackMyVM](ctfs/hackmyvm/writeup-visions-or-hackmyvm.md)
 * [VulNyx](ctfs/vulnyx/README.md)
   * [WriteUp: First | VulNyx](ctfs/vulnyx/writeup-first-or-vulnyx.md)
+  * [WriteUp: Doctor | VulNyx](ctfs/vulnyx/writeup-doctor-or-vulnyx.md)
 * [Try Hack Me](ctfs/try-hack-me/README.md)
   * [WriteUp: Blue | TryHackMe](ctfs/try-hack-me/writeup-blue-or-tryhackme.md)
