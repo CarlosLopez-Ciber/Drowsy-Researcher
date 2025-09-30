@@ -1,5 +1,4 @@
 # VulNyx
 
-## <mark style="color:orange;">Nivel: Low</mark>
-
 <table data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td align="center"><a data-mention href="writeup-first-or-vulnyx.md">writeup-first-or-vulnyx.md</a></td><td><a href="https://vulnyx.com/img/card.png">https://vulnyx.com/img/card.png</a></td></tr><tr><td align="center"><a data-mention href="writeup-doctor-or-vulnyx.md">writeup-doctor-or-vulnyx.md</a></td><td><a href="https://vulnyx.com/img/card.png">https://vulnyx.com/img/card.png</a></td></tr><tr><td align="center"><a data-mention href="writeup-fing-or-vulnyx.md">writeup-fing-or-vulnyx.md</a></td><td><a href="https://vulnyx.com/img/card.png">https://vulnyx.com/img/card.png</a></td></tr><tr><td align="center"><a data-mention href="writeup-shock-or-vulnyx.md">writeup-shock-or-vulnyx.md</a></td><td><a href="https://vulnyx.com/img/card.png">https://vulnyx.com/img/card.png</a></td></tr></tbody></table>
+
