@@ -44,6 +44,8 @@ nmap -p6667 --script="irc-unrealircd-backdoor" 192.168.56.30
 
 El script confirmó que el servidor era vulnerable. Con esta confirmación, busqué un exploit público y encontré uno muy conveniente en GitHub. Este exploit simplifica el proceso de enviar el payload malicioso al servidor IRC.
 
+[https://github.com/Ranger11Danger/UnrealIRCd-3.2.8.1-Backdoor](https://github.com/Ranger11Danger/UnrealIRCd-3.2.8.1-Backdoor)
+
 Para recibir la conexión, primero puse un listener de `netcat` en mi máquina atacante en el puerto 4444.
 
 ```bash
