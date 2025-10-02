@@ -47,5 +47,6 @@
   * [WriteUp: Doctor | VulNyx](ctfs/vulnyx/writeup-doctor-or-vulnyx.md)
   * [WriteUp: Fing | VulNyx](ctfs/vulnyx/writeup-fing-or-vulnyx.md)
   * [WriteUp: Shock | VulNyx](ctfs/vulnyx/writeup-shock-or-vulnyx.md)
+  * [WriteUp: Real | VulNyx](ctfs/vulnyx/writeup-real-or-vulnyx.md)
 * [Try Hack Me](ctfs/try-hack-me/README.md)
   * [WriteUp: Blue | TryHackMe](ctfs/try-hack-me/writeup-blue-or-tryhackme.md)
