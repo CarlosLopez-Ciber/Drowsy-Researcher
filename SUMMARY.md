@@ -50,3 +50,5 @@
   * [WriteUp: Real | VulNyx](ctfs/vulnyx/writeup-real-or-vulnyx.md)
 * [Try Hack Me](ctfs/try-hack-me/README.md)
   * [WriteUp: Blue | TryHackMe](ctfs/try-hack-me/writeup-blue-or-tryhackme.md)
+* [VulnHub](ctfs/vulnhub/README.md)
+  * [WriteUp: Breakout | VulnHub](ctfs/vulnhub/writeup-breakout-or-vulnhub.md)
