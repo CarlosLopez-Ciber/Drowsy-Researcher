@@ -1,4 +1,5 @@
 ---
+hidden: true
 coverY: 0
 ---
 

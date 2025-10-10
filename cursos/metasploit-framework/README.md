@@ -1,4 +1,5 @@
 ---
+hidden: true
 icon: viruses
 cover: >-
   https://www.campusciberseguridad.com/wp-content/uploads/2024/11/Metasploit_La-herramienta-esencial-en-Ciberseguridad.jpg
