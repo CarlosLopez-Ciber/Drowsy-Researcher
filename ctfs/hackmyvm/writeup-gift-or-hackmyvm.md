@@ -59,7 +59,7 @@ PORT   STATE SERVICE VERSION
 
 Al acceder a la dirección IP `http://172.16.201.128` a través de un navegador web, se encontró una página con un único mensaje, reforzando la idea inicial de simplicidad:
 
-<figure><img src="../../.gitbook/assets/web-acces.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/web-acces (1).png" alt=""><figcaption></figcaption></figure>
 
 > "Dont Overthink. Really, Its simple."
 
