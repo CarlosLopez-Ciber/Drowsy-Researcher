@@ -18,7 +18,7 @@ print(languages)
 
 ***
 
-### Acceso a Elementos en una Lista
+### <mark style="color:orange;">Acceso a Elementos en una Lista</mark>
 
 Para acceder a un elemento, usamos su **índice**, que es su posición dentro de la lista.
 
@@ -31,7 +31,7 @@ print(languages[0])
 # Output: 'python'
 ```
 
-#### 🔹 Aplicación de Métodos de Cadenas
+#### <mark style="color:green;">🔹 Aplicación de Métodos de Cadenas</mark>
 
 Al acceder a un elemento de la lista (que en este caso es una cadena de texto o `str`), puedes aplicarle directamente los métodos propios de ese tipo de dato, como `.title()`, `.upper()` o `.lower()`.
 
@@ -41,7 +41,7 @@ print(languages[0].title())  # Convierte "python" a "Python"
 # Output: 'Python'
 ```
 
-#### 🔹 Acceso con Índices Negativos
+#### <mark style="color:green;">🔹 Acceso con Índices Negativos</mark>
 
 Python permite usar **índices negativos** para acceder a elementos desde el final. El índice `-1` es el **último elemento**, `-2` el penúltimo, etc.
 
@@ -53,7 +53,7 @@ print(languages[-1])  # Accede al último elemento
 
 ***
 
-### Uso de f-strings con Elementos de la Lista
+### <mark style="color:orange;">Uso de f-strings con Elementos de la Lista</mark>
 
 Puedes integrar fácilmente los elementos de una lista en cadenas de texto (como las `f-strings`) para construir mensajes dinámicos.
 
@@ -68,7 +68,7 @@ print(message)
 
 ***
 
-### Métodos Comunes de las Listas
+### <mark style="color:orange;">Métodos Comunes de las Listas</mark>
 
 Las listas tienen "métodos" integrados, que son funciones que "pertenecen" al objeto de la lista y se llaman con un punto (p.ej., `lista.append()`).
 
@@ -86,7 +86,7 @@ Las listas tienen "métodos" integrados, que son funciones que "pertenecen" al o
 | `reverse()`                | Invierte el orden de la lista (modifica la lista original).                           |
 | `sort()`                   | Ordena la lista (modifica la lista original).                                         |
 
-### ¿Dudas? Usa `help(list)`
+### <mark style="color:orange;">¿Dudas? Usa</mark> <mark style="color:orange;"></mark><mark style="color:orange;">`help(list)`</mark>
 
 Si alguna vez olvidas un método o cómo funciona, puedes usar la función `help()` directamente en tu terminal de Python para ver la documentación oficial.
 
@@ -94,15 +94,15 @@ Si alguna vez olvidas un método o cómo funciona, puedes usar la función `help
 help(list)
 ```
 
-> Si no logras comprender la información mostrada por la documentación, copia la información y pídele a tu IA de confianza una mayor explicación.
+> <mark style="color:yellow;">Si no logras comprender la información mostrada por la documentación, copia la información y pídele a tu IA de confianza una mayor explicación.</mark>
 
 ***
 
-### Funciones y Declaraciones Útiles
+### <mark style="color:orange;">Funciones y Declaraciones Útiles</mark>
 
 Existen también funciones y declaraciones generales de Python (que no se llaman con un punto) que son muy útiles para trabajar con listas.
 
-#### Eliminación por Índice con la Instrucción `del`
+#### <mark style="color:green;">Eliminación por Índice con la Instrucción</mark> <mark style="color:green;"></mark><mark style="color:green;">`del`</mark>
 
 La instrucción `del` elimina permanentemente un elemento de la lista usando su índice.
 
@@ -120,7 +120,7 @@ print(f"Lista después: {languages}")
 
 > `del` es útil cuando sabes la posición exacta del elemento y **no necesitas conservar el valor eliminado**. A diferencia del método `.pop()`, `del` no devuelve el valor que borra.
 
-#### Ordenar una Lista Temporalmente con `sorted()`
+#### <mark style="color:green;">Ordenar una Lista Temporalmente con</mark> <mark style="color:green;"></mark><mark style="color:green;">`sorted()`</mark>
 
 Si quieres ver una versión ordenada de tu lista pero **sin alterar el orden original**, puedes usar la función `sorted()`. Esta función **devuelve una nueva lista ordenada** y deja la original intacta.
 
@@ -140,7 +140,7 @@ print(languages)
 # Output: ['python', 'java', 'go', 'c++']
 ```
 
-#### Encontrar la Longitud de una Lista con `len()`
+#### <mark style="color:green;">Encontrar la Longitud de una Lista con</mark> <mark style="color:green;"></mark><mark style="color:green;">`len()`</mark>
 
 La función `len()` te devuelve la **cantidad total de elementos** que contiene una lista.
 
