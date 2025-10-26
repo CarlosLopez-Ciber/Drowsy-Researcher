@@ -39,6 +39,7 @@
 
 * [Python](programacioin/python/README.md)
   * [Listas🐍](programacioin/python/listas.md)
+  * [Entornos Virtuales📦](programacioin/python/entornos-virtuales.md)
 
 ## 🎮 CTFs
 
