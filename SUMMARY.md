@@ -35,6 +35,11 @@
   * [Metasploit - Comandos de Búsqueda](cursos/metasploit-framework/metasploit-comandos-de-busqueda.md)
   * [Gestión de Entornos de Trabajo (Workspaces)](cursos/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
 
+## Programacióin
+
+* [Python](programacioin/python/README.md)
+  * [Listas🐍](programacioin/python/listas.md)
+
 ## 🎮 CTFs
 
 * [OverTheWire](ctfs/overthewire.md)
