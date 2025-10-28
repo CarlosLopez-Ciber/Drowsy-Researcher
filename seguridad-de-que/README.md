@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # 🥷 Seguridad ¿De qué?
 
 ## <mark style="color:red;">1. Seguridad de la Información</mark>
