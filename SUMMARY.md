@@ -30,7 +30,7 @@
 
 * [Metasploit Framework](cursos/metasploit-framework/README.md)
   * [Inicialización Correcta de Metasploit](cursos/metasploit-framework/inicializacion-correcta-de-metasploit.md)
-  * [Metasploit - Módulos](cursos/metasploit-framework/metasploit-modulos.md)
+  * [Entendiendo los Módulos Clave de Metasploit](cursos/metasploit-framework/entendiendo-los-modulos-clave-de-metasploit.md)
   * [Metasploit - Comandos básicos](cursos/metasploit-framework/metasploit-comandos-basicos.md)
   * [Metasploit - Comandos de Búsqueda](cursos/metasploit-framework/metasploit-comandos-de-busqueda.md)
   * [Gestión de Entornos de Trabajo (Workspaces)](cursos/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)

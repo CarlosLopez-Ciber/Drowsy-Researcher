@@ -88,8 +88,8 @@ Dominar Metasploit Framework te da la visión completa de cómo se materializa u
 [inicializacion-correcta-de-metasploit.md](inicializacion-correcta-de-metasploit.md)
 {% endcontent-ref %}
 
-{% content-ref url="metasploit-modulos.md" %}
-[metasploit-modulos.md](metasploit-modulos.md)
+{% content-ref url="entendiendo-los-modulos-clave-de-metasploit.md" %}
+[entendiendo-los-modulos-clave-de-metasploit.md](entendiendo-los-modulos-clave-de-metasploit.md)
 {% endcontent-ref %}
 
 {% content-ref url="metasploit-comandos-basicos.md" %}
