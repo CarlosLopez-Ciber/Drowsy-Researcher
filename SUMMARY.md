@@ -1,10 +1,10 @@
 # Table of contents
 
 * [👋 Introducción](README.md)
-* [🗺️ Fundamentos para Iniciar en Ciberseguridad](fundamentos-para-iniciar-en-ciberseguridad/README.md)
-  * [👨‍🎓 Plataformas/Casas Certificadoras](fundamentos-para-iniciar-en-ciberseguridad/plataformas-casas-certificadoras.md)
-  * [Canales de YouTube](fundamentos-para-iniciar-en-ciberseguridad/canales-de-youtube.md)
-  * [Recursos adicionales](fundamentos-para-iniciar-en-ciberseguridad/recursos-adicionales.md)
+* [🗺️ Los 3 Fundamentos que Debes Dominar Antes de Entrar en Ciberseguridad](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/README.md)
+  * [👨‍🎓 Plataformas/Casas Certificadoras](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/plataformas-casas-certificadoras.md)
+  * [Canales de YouTube](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/canales-de-youtube.md)
+  * [Recursos adicionales](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/recursos-adicionales.md)
 * [🥷 ¿Sabes la Diferencia Real entre Ciberseguridad, Seguridad Informática y de la Información?](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
   * [La Filosofía que Define la Cultura InfoSec](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md)
 
