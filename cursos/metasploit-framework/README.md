@@ -18,7 +18,7 @@ Aunque en el mundo de la Ciberseguridad existen herramientas mucho más avanzada
 
 ***
 
-### <mark style="color:orange;">1. Metasploit Framework: La Plataforma de Aprendizaje y Pruebas</mark>
+### <mark style="color:orange;">1. Metasploit Framework</mark>
 
 #### <mark style="color:blue;">¿Qué es Exactamente?</mark>
 
