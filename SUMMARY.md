@@ -5,8 +5,8 @@
   * [👨‍🎓 Plataformas/Casas Certificadoras](fundamentos-para-iniciar-en-ciberseguridad/plataformas-casas-certificadoras.md)
   * [Canales de YouTube](fundamentos-para-iniciar-en-ciberseguridad/canales-de-youtube.md)
   * [Recursos adicionales](fundamentos-para-iniciar-en-ciberseguridad/recursos-adicionales.md)
-* [🥷 Seguridad ¿De qué?](seguridad-de-que/README.md)
-  * [Cultura InfoSec](seguridad-de-que/cultura-infosec.md)
+* [🥷 ¿Sabes la Diferencia Real entre Ciberseguridad, Seguridad Informática y de la Información?](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
+  * [Cultura InfoSec](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/cultura-infosec.md)
 
 ## 🔏 Seguridad de la Información
 
