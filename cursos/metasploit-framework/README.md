@@ -14,7 +14,7 @@ coverY: 0
 
 Si estás dando tus primeros pasos en el _pentesting_ o ya eres un profesional de la seguridad ofensiva, hay una herramienta que sirve como la piedra angular del aprendizaje: Metasploit Framework.
 
-Aunque en el mundo de la Ciberseguridad existen herramientas mucho más avanzadas y específicas (que también exploraremos), consideramos que Metasploit es fundamental porque te permite comprender la lógica y la secuencia de una explotación de principio a fin.
+Aunque en el mundo de la Ciberseguridad existen herramientas mucho más avanzadas y específicas considero que Metasploit es fundamental porque te permite comprender la lógica y la secuencia de una explotación de principio a fin.
 
 Por eso, me emociona compartir mi conocimiento contigo:
 
