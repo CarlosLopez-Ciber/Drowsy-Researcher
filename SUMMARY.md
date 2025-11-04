@@ -6,7 +6,7 @@
   * [Canales de YouTube](fundamentos-para-iniciar-en-ciberseguridad/canales-de-youtube.md)
   * [Recursos adicionales](fundamentos-para-iniciar-en-ciberseguridad/recursos-adicionales.md)
 * [🥷 ¿Sabes la Diferencia Real entre Ciberseguridad, Seguridad Informática y de la Información?](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
-  * [Cultura InfoSec](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/cultura-infosec.md)
+  * [La Filosofía que Define la Cultura InfoSec](sabes-la-diferencia-real-entre-ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md)
 
 ## 🔏 Seguridad de la Información
 
