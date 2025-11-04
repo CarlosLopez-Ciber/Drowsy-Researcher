@@ -5,8 +5,17 @@ coverY: 0
 
 # 👋 Introducción
 
-¡Hola! Soy Carlos Lopez y bienvenido a mi blog de CTFs de ciberseguridad 🧠💻
+Hola, soy **Carlos Lopez** y este es el espacio donde la curiosidad no tiene límites.
 
-Soy estudiante de la carrera de Administración de Ciberseguridad en [IDAT](https://www.idat.edu.pe/) y de Computación Científica en la [Universidad Nacional Mayor de San Marcos](https://www.unmsm.edu.pe/) , fan de la tecnología, la ciencia y el aprendizaje autodidacta. Me encanta explorar temas como pentesting, análisis forense, redes, automatización, programación en Python y todo lo relacionado con la protección de sistemas informáticos.
+Mi formación se cimienta en dos pilares: la Administración de Ciberseguridad en [IDAT](https://www.idat.edu.pe/) y la Computación Científica en la [Universidad Nacional Mayor de San Marcos](https://www.unmsm.edu.pe/). Esta doble visión me ha enseñado que la tecnología se nutre de la ciencia, la lógica y el pensamiento profundo. Soy un fanático del aprendizaje autodidacta y de la interconexión entre las disciplinas.
 
-Este blog nace como un espacio para compartir lo que aprendo en mi camino: laboratorios, writeups, conceptos clave, errores, aciertos y todo lo que ayude a crecer en el mundo del ethical hacking y la ciberseguridad ofensiva y defensiva.
+¿Qué encontrarás aquí?
+
+Este blog es mi bitácora para compartir mi ruta de aprendizaje, que va más allá de un solo campo. Aquí exploraremos:
+
+* Fundamentos Tecnológicos: Desde la arquitectura de redes y sistemas operativos, hasta la protección de sistemas informáticos (Ciberseguridad).
+* Contenido Práctico: Laboratorios, _writeups_ técnicos, conceptos clave, errores, aciertos y todo aquello que impulse el crecimiento de la comunidad.
+
+Mi compromiso es compartir la complejidad del mundo digital de forma clara y accesible, mostrándote que el conocimiento está conectado.
+
+¡Te invito a explorar, cuestionar y aprender conmigo!
