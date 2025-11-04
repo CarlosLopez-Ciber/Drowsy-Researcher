@@ -34,7 +34,7 @@ Si quieres profundizar en su desarrollo y código, aquí tienes su documentació
 
 ***
 
-### <mark style="color:orange;">2. El Vocabulario Esencial: Explotación</mark>
+### <mark style="color:orange;">2. El Vocabulario Esencial</mark>
 
 Para entender Metasploit, primero debes dominar la terminología que rige el mundo de la seguridad ofensiva. Todo gira en torno a dos conceptos cruciales: el _Exploit_ y el _Payload_.
 
