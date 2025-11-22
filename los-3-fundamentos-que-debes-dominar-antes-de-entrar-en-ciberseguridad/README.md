@@ -3,6 +3,7 @@ description: >-
   ¿Quieres iniciar en Ciberseguridad? Descubre los 3 fundamentos esenciales:
   Redes, Sistemas Operativos y Programación. Conoce la hoja de ruta para empezar
   tu carrera digital.
+hidden: true
 coverY: 0
 ---
 

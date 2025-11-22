@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Introducción](README.md)
+  * [Computación Científica](introduccion/computacion-cientifica.md)
 * [🗺️ Los 3 Fundamentos que Debes Dominar Antes de Entrar en Ciberseguridad](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/README.md)
   * [👨‍🎓 Plataformas/Casas Certificadoras](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/plataformas-casas-certificadoras.md)
   * [Canales de YouTube](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/canales-de-youtube.md)
