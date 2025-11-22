@@ -5,7 +5,7 @@ description: >-
   ¡Mejora tu seguridad digital hoy!
 ---
 
-# 🥷 ¿Sabes la Diferencia Real entre Ciberseguridad, Seguridad Informática y de la Información?
+# Ciberseguridad, Seguridad Informática y de la Información
 
 Si te encuentras en el mundo de la tecnología o si simplemente te interesa proteger tus activos digitales, seguramente te has encontrado con tres términos que se usan casi indistintamente, pero que en realidad tienen alcances muy diferentes: Seguridad de la Información, Seguridad Informática y Ciberseguridad.
 
