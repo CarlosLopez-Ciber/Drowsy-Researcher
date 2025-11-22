@@ -9,8 +9,8 @@
 ## 🔏 Seguridad de la Información
 
 * [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/README.md)
-  * [Ciberseguridad, Seguridad Informática y de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
-    * [La Filosofía que Define la Cultura InfoSec](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md)
+  * [Ciberseguridad, Seguridad Informática y de la Información](ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
+    * [La Filosofía que Define la Cultura InfoSec](ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md)
   * [La Tríada CIA](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-cia.md)
   * [El Marco de Soporte AAA](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/el-marco-de-soporte-aaa.md)
   * [La Tríada Antagónica DAD](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/la-triada-antagonica-dad.md)

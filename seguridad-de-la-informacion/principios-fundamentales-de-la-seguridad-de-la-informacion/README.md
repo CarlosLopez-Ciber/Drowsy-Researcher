@@ -4,8 +4,8 @@ coverY: 0
 
 # Principios Fundamentales de la Seguridad de la Información
 
-1. [ciberseguridad-seguridad-informatica-y-de-la-informacion](ciberseguridad-seguridad-informatica-y-de-la-informacion/ "mention")
-   1. [la-filosofia-que-define-la-cultura-infosec.md](ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md "mention")
+1. [ciberseguridad-seguridad-informatica-y-de-la-informacion](../../ciberseguridad-seguridad-informatica-y-de-la-informacion/ "mention")
+   1. [la-filosofia-que-define-la-cultura-infosec.md](../../ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md "mention")
 2. [la-triada-cia.md](la-triada-cia.md "mention")
 3. [el-marco-de-soporte-aaa.md](el-marco-de-soporte-aaa.md "mention")
 4. [la-triada-antagonica-dad.md](la-triada-antagonica-dad.md "mention")&#x20;

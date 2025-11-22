@@ -15,7 +15,7 @@ La Cultura InfoSec es mucho más profunda. Engloba no solo las prácticas y norm
 
 ***
 
-## 1. El Término "Hacker": Destruyendo el Estereotipo
+## <mark style="color:yellow;">1. El Término "Hacker": Destruyendo el Estereotipo</mark>
 
 En el ámbito de la ciberseguridad, la palabra _hacker_ no debe asociarse automáticamente con actividades maliciosas (es decir, el _cracker_).
 
@@ -23,19 +23,19 @@ Un hacker ético es una persona con una competencia técnica extraordinariamente
 
 No es un criminal; es un solucionador de problemas obsesionado con el funcionamiento interno de la tecnología.
 
-#### Las Tres Características que Definen a un Hacker
+#### <mark style="color:purple;">Las Tres Características que Definen a un Hacker</mark>
 
 Si quieres sumarte a esta cultura, debes cultivar estas habilidades:
 
-* Curiosidad Intelectual: No te conformas con usar el _software_; quieres entender cómo fue construido. Es el deseo constante de saber cómo funcionan los sistemas digitales en cada capa.
-* Pensamiento Lateral: Es la capacidad de encontrar rutas inesperadas. Se trata de buscar soluciones no convencionales a problemas de seguridad complejos que los diseñadores no previeron.
-* Conocimiento Técnico Profundo: Un verdadero dominio de sistemas operativos (Windows, Linux, macOS), redes, lenguajes de programación y la anatomía de las vulnerabilidades comunes.
+* **Curiosidad Intelectual:** No te conformas con usar el _software_; quieres entender cómo fue construido. Es el deseo constante de saber cómo funcionan los sistemas digitales en cada capa.
+* **Pensamiento Lateral:** Es la capacidad de encontrar rutas inesperadas. Se trata de buscar soluciones no convencionales a problemas de seguridad complejos que los diseñadores no previeron.
+* **Conocimiento Técnico Profundo:** Un verdadero dominio de sistemas operativos (Windows, Linux, macOS), redes, lenguajes de programación y la anatomía de las vulnerabilidades comunes.
 
 > Ejemplo de un Hacker Ético: Imagina que un profesional descubre que un sistema web permite la carga de archivos sin una validación de tipo adecuada. En lugar de explotar esa falla, la reporta inmediatamente al proveedor a través de un proceso de _responsible disclosure_. Su motivación es la mejora, no el daño.
 
 ***
 
-## 2. Hacking y el Dominio de la Tecnología
+## <mark style="color:yellow;">2. Hacking y el Dominio de la Tecnología</mark>
 
 El acto de realizar un _hacking_ —ya sea desde una perspectiva ofensiva o como parte de pruebas de penetración (_pentesting_) autorizadas— es, en esencia, un acto de profunda comprensión tecnológica.
 
@@ -52,7 +52,7 @@ Para tener éxito, un _hacker_ debe comprender a detalle:
 
 ***
 
-## 3. El Manifiesto Hacker: La Ética de la Curiosidad
+## <mark style="color:yellow;">3. El Manifiesto Hacker: La Ética de la Curiosidad</mark>
 
 Para entender la mentalidad de la comunidad _hacker_ en sus inicios, debemos volver a un documento icónico: _The Conscience of a Hacker_ (La Conciencia de un Hacker), también conocido como El Manifiesto Hacker.
 
