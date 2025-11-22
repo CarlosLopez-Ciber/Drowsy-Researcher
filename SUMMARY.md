@@ -38,11 +38,11 @@
 ## Programacióin
 
 * [Python](programacioin/python/README.md)
-  * [Entornos Virtuales📦](programacioin/python/entornos-virtuales.md)
+  * [Entornos Virtuales](programacioin/python/entornos-virtuales.md)
   * [Tipos de Datos](programacioin/python/tipos-de-datos.md)
   * [Texto en Python - Cadenas (Strings)](programacioin/python/texto-en-python-cadenas-strings.md)
   * [Variables](programacioin/python/variables.md)
-  * [Listas🐍](programacioin/python/listas.md)
+  * [Listas](programacioin/python/listas.md)
 
 ## 🎮 CTFs
 
