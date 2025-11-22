@@ -86,12 +86,12 @@ Dominar Metasploit Framework te da la visión completa de cómo se materializa u
 [entendiendo-los-modulos-clave-de-metasploit.md](entendiendo-los-modulos-clave-de-metasploit.md)
 {% endcontent-ref %}
 
-{% content-ref url="metasploit-comandos-basicos.md" %}
-[metasploit-comandos-basicos.md](metasploit-comandos-basicos.md)
+{% content-ref url="comandos-basicos.md" %}
+[comandos-basicos.md](comandos-basicos.md)
 {% endcontent-ref %}
 
-{% content-ref url="metasploit-comandos-de-busqueda.md" %}
-[metasploit-comandos-de-busqueda.md](metasploit-comandos-de-busqueda.md)
+{% content-ref url="comandos-de-busqueda.md" %}
+[comandos-de-busqueda.md](comandos-de-busqueda.md)
 {% endcontent-ref %}
 
 {% content-ref url="gestion-de-entornos-de-trabajo-workspaces.md" %}

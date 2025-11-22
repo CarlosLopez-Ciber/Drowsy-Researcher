@@ -32,16 +32,22 @@
 * [Metasploit Framework](cursos/metasploit-framework/README.md)
   * [Inicialización Correcta de Metasploit](cursos/metasploit-framework/inicializacion-correcta-de-metasploit.md)
   * [Entendiendo los Módulos Clave de Metasploit](cursos/metasploit-framework/entendiendo-los-modulos-clave-de-metasploit.md)
-  * [Metasploit - Comandos básicos](cursos/metasploit-framework/metasploit-comandos-basicos.md)
-  * [Metasploit - Comandos de Búsqueda](cursos/metasploit-framework/metasploit-comandos-de-busqueda.md)
+  * [Comandos básicos](cursos/metasploit-framework/comandos-basicos.md)
+  * [Comandos de Búsqueda](cursos/metasploit-framework/comandos-de-busqueda.md)
   * [Gestión de Entornos de Trabajo (Workspaces)](cursos/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
 
 ## Programacióin
 
 * [Python](programacioin/python/README.md)
   * [Entornos Virtuales](programacioin/python/entornos-virtuales.md)
+  * [Sintaxis vs. Semántica](programacioin/python/sintaxis-vs.-semantica.md)
   * [Tipos de Datos](programacioin/python/tipos-de-datos.md)
-  * [Texto en Python - Cadenas (Strings)](programacioin/python/texto-en-python-cadenas-strings.md)
+  * [Cadena de Texto (Strings)](programacioin/python/cadena-de-texto-strings.md)
+  * [Comentarios](programacioin/python/comentarios.md)
+  * [Números](programacioin/python/numeros.md)
+  * [Operadores Aritméticos](programacioin/python/operadores-aritmeticos.md)
+  * [Operadores de Asignación](programacioin/python/operadores-de-asignacion.md)
+  * [Booleanos](programacioin/python/booleanos.md)
   * [Variables](programacioin/python/variables.md)
   * [Listas](programacioin/python/listas.md)
 
