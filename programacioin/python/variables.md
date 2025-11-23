@@ -1,124 +1,119 @@
 # Variables
 
-En Python, una **variable** es la base para guardar y gestionar datos en tu programa. Piénsalo como una **etiqueta** o un **contenedor** en la memoria que "apunta" a un valor (como texto, un número, una lista, etc.).
+En Python, una **variable** es el mecanismo fundamental para almacenar y gestionar datos. Técnicamente, actúa como una referencia o "etiqueta" en la memoria del sistema que apunta a un valor específico (un número, una cadena de texto, una lista, etc.).
 
-> En términos simples, una variable actúa como un contenedor que guarda información temporalmente para ser usada o modificada más adelante.
+A diferencia de otros lenguajes que tratan las variables como cajas de tamaño fijo, Python las trata como referencias a objetos.
+
+### <mark style="color:yellow;">Creación y Asignación</mark>
+
+Para crear una variable, se utiliza el operador de asignación `=`. La sintaxis es `nombre_variable = valor`.
+
+```python
+mensaje = "Hola mundo en Python"
+print(mensaje)
+# Salida: Hola mundo en Python
+```
+
+En este bloque:
+
+1. `mensaje`: Es el identificador (nombre) de la variable.
+2. `=`: Es el operador que asigna el valor de la derecha al nombre de la izquierda.
+3. `"Hola mundo..."`: Es el objeto (dato) almacenado en memoria.
 
 ***
 
-### <mark style="color:orange;">¿Cómo se Crea y Asigna una Variable?</mark>
+### <mark style="color:yellow;">Tipado Dinámico</mark>
 
-En Python, crear una variable es tan simple como darle un nombre y asignarle un valor usando el operador de asignación `=`.
+Python utiliza un sistema de **tipado dinámico**. Esto implica dos características:
 
-```
-mensaje = "¡Hola mundo en Python!"
-print(mensaje)
+1. No es necesario declarar el tipo de dato explícitamente (no se usa `int x` o `String s`).
+2. Una misma variable puede cambiar de tipo durante la ejecución del programa al asignarle un nuevo valor.
 
-# Output: ¡Hola mundo en Python!
-```
+```python
+# Inicialización como cadena de texto (str)
+dato = "Aprendiendo Python"
+print(dato)
 
-* `mensaje`: Es el nombre de la variable.
-* `=`: Es el operador de asignación.
-* `"¡Hola mundo en Python!"`: Es el valor (un `str` o cadena) que se está almacenando.
-
-***
-
-### <mark style="color:orange;">Python es de Tipado Dinámico</mark>
-
-A diferencia de otros lenguajes (como C++ o Java), en Python **no necesitas declarar el tipo de la variable** con antelación. Python infiere el tipo automáticamente cuando le asignas un valor.
-
-Esto también significa que puedes "reasignar" un nuevo valor a una variable en cualquier momento, e incluso cambiar su tipo.
-
-```
-# 'mensaje' primero almacena un string
-mensaje = "¡Hola mundo en Python!"
-print(mensaje)
-
-# Ahora, 'mensaje' almacena un string diferente
-mensaje = "Aprendiendo Python paso a paso"
-print(mensaje)
-
-# Incluso podría cambiar a un número
-mensaje = 100
-print(mensaje)
-```
-
-**Salida esperada:**
-
-```
-¡Hola mundo en Python!
-Aprendiendo Python paso a paso
-100
-```
-
-***
-
-### <mark style="color:orange;">Reglas para Nombrar Variables</mark>
-
-Elegir buenos nombres es crucial para que tu código sea legible. Python tiene reglas estrictas (sintaxis) y recomendaciones (buenas prácticas).
-
-#### <mark style="color:red;">🔴 Reglas Obligatorias (Sintaxis)</mark>
-
-Si no sigues estas reglas, tu código fallará con un `SyntaxError`.
-
-* **Debe** comenzar con una letra (`a-z`, `A-Z`) o un guion bajo (`_`).
-* El resto del nombre solo puede contener letras, números (`0-9`) y guiones bajos.
-* **No puede** comenzar con un número (ej. `2variable` ❌).
-* **No puede** contener espacios (ej. `nombre completo` ❌).
-* **No puede** usar caracteres especiales (ej. `$nombre`, `&edad` ❌).
-* **No puede** ser una [palabra reservada de Python](https://www.google.com/search?q=https://es.wikibooks.org/wiki/Python/Palabras_reservadas) (ej. `print`, `if`, `def` ❌).
-
-#### <mark style="color:purple;">🟢 Buenas Prácticas (Semántica)</mark>
-
-Estas son convenciones de la comunidad de Python (definidas en el [PEP 8](https://peps.python.org/pep-0008/)) que hacen tu código más limpio y fácil de leer para otros programadores.
-
-| **Práctica**                        | **Ejemplo Correcto (Recomendado)** | **Ejemplo Incorrecto (Evitar)**  |
-| ----------------------------------- | ---------------------------------- | -------------------------------- |
-| Nombres cortos y descriptivos       | `usuario_activo`                   | `x`, `ua` (demasiado corto)      |
-| Usar **snake\_case**                | `nombre_usuario`                   | `NombreUsuario`, `nombreusuario` |
-| Claridad ante todo                  | `contador_intentos`                | `cnt`                            |
-| Inglés (en proyectos colaborativos) | `first_name`                       | `primer_nombre`                  |
-
-**snake\_case** (minúsculas con guiones bajos) es el estándar de oro en Python para nombrar variables.
-
-**Ejemplo de buenas prácticas:**
-
-```
-nombre = "Carlos"
-edad = 21
-usuario_activo = True
-
-print(f"Nombre: {nombre}")
-print(f"Edad: {edad}")
-print(f"¿Usuario activo?: {usuario_activo}")
+# Reasignación como entero (int)
+dato = 100
+print(dato)
 ```
 
 **Salida:**
 
 ```
-Nombre: Carlos
-Edad: 21
-¿Usuario activo?: True
+Aprendiendo Python
+100
 ```
 
 ***
 
-### <mark style="color:orange;">Asignación Múltiple: Un Atajo Útil</mark>
+### <mark style="color:yellow;">Reglas de Nomenclatura</mark>
 
-Python te permite asignar valores a múltiples variables en una sola línea, lo que puede ser muy conveniente.
+Para nombrar variables correctamente, se deben distinguir las reglas obligatorias de sintaxis (que causan errores si no se siguen) y las convenciones de estilo (que mejoran la legibilidad).
 
+#### <mark style="color:$danger;">Reglas de Sintaxis (Obligatorias)</mark>
+
+Si se violan estas reglas, el intérprete arrojará un `SyntaxError`.
+
+* **Caracteres permitidos:** Letras (a-z, A-Z), números (0-9) y guiones bajos (`_`).
+* **Inicio:** El nombre debe comenzar obligatoriamente con una letra o un guion bajo. **Nunca** con un número (ej. `2variable` es inválido).
+* **Espacios:** No se permiten espacios en blanco (ej. `nombre usuario` es inválido).
+* **Palabras Reservadas:** No se pueden usar palabras clave del lenguaje como identificadores (ej. `class`, `return`, `if`, `global`).
+
+#### <mark style="color:$danger;">Convenciones de Estilo (PEP 8)</mark>
+
+La guía de estilo oficial de Python (PEP 8) recomienda estándares para mantener el código limpio y consistente.
+
+* **Snake Case:** Las variables deben escribirse en minúsculas, separando las palabras con guiones bajos (`nombre_de_usuario`).
+* **Descriptividad:** Los nombres deben ser claros y explicar el contenido de la variable.
+
+| **Tipo**     | **Ejemplo Correcto (Recomendado)**        | **Ejemplo Incorrecto (Evitar)**  |
+| ------------ | ----------------------------------------- | -------------------------------- |
+| **Formato**  | `nombre_usuario`                          | `NombreUsuario`, `nombreusuario` |
+| **Claridad** | `contador_intentos`                       | `cnt`, `c`                       |
+| **Idioma**   | `first_name` (en equipos internacionales) | `primer_nombre`                  |
+
+**Ejemplo de aplicación de buenas prácticas:**
+
+```python
+nombre_completo = "Carlos Pérez"
+edad_usuario = 21
+esta_activo = True
+
+print(f"Usuario: {nombre_completo}, Edad: {edad_usuario}, Activo: {esta_activo}")
 ```
-# Inicializar varias variables a la vez
+
+***
+
+### <mark style="color:yellow;">Asignación Múltiple</mark>
+
+Python permite asignar valores a varias variables en una sola línea de código, lo cual es útil para inicializar coordenadas o valores relacionados.
+
+```python
+# Asignación posicional: x=0, y=10, z=20
 x, y, z = 0, 10, 20
 
 print(f"X: {x}, Y: {y}, Z: {z}")
-# Output: X: 0, Y: 10, Z: 20
+# Salida: X: 0, Y: 10, Z: 20
 ```
 
-## <mark style="color:yellow;">Constantes</mark>
+***
 
-Una _constante_ es una variable cuyo valor permanece igual durante toda la vida de un programa. _Utiliza las letras mayúsculas_ para indicar que una variable debe tratarse como una constante y nunca cambiarse:
+### <mark style="color:yellow;">Constantes</mark>
+
+Una **constante** es un valor que no debería cambiar durante la ejecución del programa.
+
+Python no tiene un tipo de dato "constante" estricto que impida la modificación del valor a nivel de intérprete (como `const` en otros lenguajes). Sin embargo, existe una convención universalmente respetada:
+
+**Las constantes se escriben completamente en MAYÚSCULAS.**
+
+Al ver una variable en mayúsculas, el programador sabe que no debe modificar ese valor.
 
 ```python
+# Convención de constante
 CONEXIONES_MAXIMAS = 5000
+PI = 3.14159
+
+print(CONEXIONES_MAXIMAS)
 ```
