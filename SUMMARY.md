@@ -52,7 +52,9 @@
   * [Operadores de Identidad](programacioin/python/operadores-de-identidad.md)
   * [Operadores de Pertenencia](programacioin/python/operadores-de-pertenencia.md)
   * [Lógica Booleana](programacioin/python/logica-booleana.md)
+  * [El Zen de Python](programacioin/python/el-zen-de-python.md)
   * [Listas](programacioin/python/listas.md)
+  * [Tuplas](programacioin/python/tuplas.md)
 
 ## 🎮 CTFs
 

@@ -37,4 +37,7 @@ layout:
 11. [operadores-de-identidad.md](operadores-de-identidad.md "mention")
 12. [operadores-de-pertenencia.md](operadores-de-pertenencia.md "mention")
 13. [logica-booleana.md](logica-booleana.md "mention")
+14. [el-zen-de-python.md](el-zen-de-python.md "mention")
+15. [listas.md](listas.md "mention")
+16. [tuplas.md](tuplas.md "mention")
 
