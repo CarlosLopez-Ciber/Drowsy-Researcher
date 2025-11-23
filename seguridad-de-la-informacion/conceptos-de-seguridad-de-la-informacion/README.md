@@ -2,10 +2,10 @@
 coverY: 0
 ---
 
-# Principios Fundamentales de la Seguridad de la Información
+# Conceptos de Seguridad de la Información
 
-1. [ciberseguridad-seguridad-informatica-y-de-la-informacion](../../ciberseguridad-seguridad-informatica-y-de-la-informacion/ "mention")
-   1. [la-filosofia-que-define-la-cultura-infosec.md](../../ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md "mention")
+1. [ciberseguridad-seguridad-informatica-y-de-la-informacion](ciberseguridad-seguridad-informatica-y-de-la-informacion/ "mention")
+   1. [la-filosofia-que-define-la-cultura-infosec.md](ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md "mention")
 2. [la-triada-cia.md](la-triada-cia.md "mention")
 3. [el-marco-de-soporte-aaa.md](el-marco-de-soporte-aaa.md "mention")
 4. [la-triada-antagonica-dad.md](la-triada-antagonica-dad.md "mention")&#x20;
@@ -18,5 +18,5 @@ coverY: 0
    4. [software-vulnerable-y-vectores-de-red.md](amenazas-vulnerabilidades-y-riesgos/software-vulnerable-y-vectores-de-red.md "mention")
    5. [vectores-de-ataque-basados-en-senuelos-y-mensajes.md](amenazas-vulnerabilidades-y-riesgos/vectores-de-ataque-basados-en-senuelos-y-mensajes.md "mention")
    6. [gestion-de-riesgos-de-terceros.md](amenazas-vulnerabilidades-y-riesgos/gestion-de-riesgos-de-terceros.md "mention")
-8. [ingenieria-social.md](ingenieria-social.md "mention")
+8. [ingenieria-social](ingenieria-social/ "mention")
    1. [tecnicas-de-ingenieria-social.md](ingenieria-social/tecnicas-de-ingenieria-social.md "mention")
