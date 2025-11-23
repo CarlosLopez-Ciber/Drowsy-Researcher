@@ -42,13 +42,16 @@
   * [Entornos Virtuales](programacioin/python/entornos-virtuales.md)
   * [Sintaxis vs. Semántica](programacioin/python/sintaxis-vs.-semantica.md)
   * [Tipos de Datos](programacioin/python/tipos-de-datos.md)
+  * [Variables](programacioin/python/variables.md)
   * [Cadena de Texto (Strings)](programacioin/python/cadena-de-texto-strings.md)
   * [Comentarios](programacioin/python/comentarios.md)
   * [Números](programacioin/python/numeros.md)
   * [Operadores Aritméticos](programacioin/python/operadores-aritmeticos.md)
   * [Operadores de Asignación](programacioin/python/operadores-de-asignacion.md)
   * [Booleanos](programacioin/python/booleanos.md)
-  * [Variables](programacioin/python/variables.md)
+  * [Operadores de Identidad](programacioin/python/operadores-de-identidad.md)
+  * [Operadores de Pertenencia](programacioin/python/operadores-de-pertenencia.md)
+  * [Lógica Booleana](programacioin/python/logica-booleana.md)
   * [Listas](programacioin/python/listas.md)
 
 ## 🎮 CTFs
