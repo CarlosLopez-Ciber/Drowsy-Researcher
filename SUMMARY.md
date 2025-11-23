@@ -62,6 +62,11 @@
   * [Fundamentos de Funciones y Descomposición](programacioin/python/fundamentos-de-funciones-y-descomposicion.md)
   * [Funciones - Parámetros y Argumentos](programacioin/python/funciones-parametros-y-argumentos.md)
   * [Funciones - Salida de Datos y Resultados](programacioin/python/funciones-salida-de-datos-y-resultados.md)
+  * [Funciones - Alcance (Scope) y Gestión de Memoria](programacioin/python/funciones-alcance-scope-y-gestion-de-memoria.md)
+  * [Fundamentos del Manejo de Excepciones](programacioin/python/fundamentos-del-manejo-de-excepciones.md)
+  * [Buenas Prácticas y Tipología de Errores](programacioin/python/buenas-practicas-y-tipologia-de-errores.md)
+  * [Ecosistema Python y Actualización Continua](programacioin/python/ecosistema-python-y-actualizacion-continua.md)
+  * [Metodología de Diseño Orientado a Objetos](programacioin/python/metodologia-de-diseno-orientado-a-objetos.md)
 
 ## 🎮 CTFs
 

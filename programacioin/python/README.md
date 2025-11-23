@@ -46,4 +46,8 @@ layout:
 20. [control-de-flujo-iterativo-bucles.md](control-de-flujo-iterativo-bucles.md "mention")
 21. [fundamentos-de-funciones-y-descomposicion.md](fundamentos-de-funciones-y-descomposicion.md "mention")
 22. [funciones-parametros-y-argumentos.md](funciones-parametros-y-argumentos.md "mention")
+23. [funciones-salida-de-datos-y-resultados.md](funciones-salida-de-datos-y-resultados.md "mention")
+24. [funciones-alcance-scope-y-gestion-de-memoria.md](funciones-alcance-scope-y-gestion-de-memoria.md "mention")
+25. [fundamentos-del-manejo-de-excepciones.md](fundamentos-del-manejo-de-excepciones.md "mention")
+26. [buenas-practicas-y-tipologia-de-errores.md](buenas-practicas-y-tipologia-de-errores.md "mention")
 
