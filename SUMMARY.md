@@ -55,6 +55,10 @@
   * [El Zen de Python](programacioin/python/el-zen-de-python.md)
   * [Listas](programacioin/python/listas.md)
   * [Tuplas](programacioin/python/tuplas.md)
+  * [Diccionarios](programacioin/python/diccionarios.md)
+  * [Datos Binarios](programacioin/python/datos-binarios.md)
+  * [Control de Flujo: Sentencias Condicionales](programacioin/python/control-de-flujo-sentencias-condicionales.md)
+  * [Control de Flujo Iterativo: Bucles](programacioin/python/control-de-flujo-iterativo-bucles.md)
 
 ## 🎮 CTFs
 

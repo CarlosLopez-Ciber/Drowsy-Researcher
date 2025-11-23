@@ -40,4 +40,8 @@ layout:
 14. [el-zen-de-python.md](el-zen-de-python.md "mention")
 15. [listas.md](listas.md "mention")
 16. [tuplas.md](tuplas.md "mention")
+17. [diccionarios.md](diccionarios.md "mention")
+18. [datos-binarios.md](datos-binarios.md "mention")
+19. [control-de-flujo-sentencias-condicionales.md](control-de-flujo-sentencias-condicionales.md "mention")
+20. [control-de-flujo-iterativo-bucles.md](control-de-flujo-iterativo-bucles.md "mention")
 
