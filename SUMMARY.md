@@ -66,7 +66,9 @@
   * [Fundamentos del Manejo de Excepciones](programacioin/python/fundamentos-del-manejo-de-excepciones.md)
   * [Buenas Prácticas y Tipología de Errores](programacioin/python/buenas-practicas-y-tipologia-de-errores.md)
   * [Ecosistema Python y Actualización Continua](programacioin/python/ecosistema-python-y-actualizacion-continua.md)
+  * [Estrategias de Introspección y Documentación](programacioin/python/estrategias-de-introspeccion-y-documentacion.md)
   * [Metodología de Diseño Orientado a Objetos](programacioin/python/metodologia-de-diseno-orientado-a-objetos.md)
+  * [Metodología de Investigación y Descubrimiento de Herramientas](programacioin/python/metodologia-de-investigacion-y-descubrimiento-de-herramientas.md)
 
 ## 🎮 CTFs
 

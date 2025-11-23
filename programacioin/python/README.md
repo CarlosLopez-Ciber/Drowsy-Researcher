@@ -52,4 +52,5 @@ layout:
 26. [buenas-practicas-y-tipologia-de-errores.md](buenas-practicas-y-tipologia-de-errores.md "mention")
 27. [ecosistema-python-y-actualizacion-continua.md](ecosistema-python-y-actualizacion-continua.md "mention")
 28. [metodologia-de-diseno-orientado-a-objetos.md](metodologia-de-diseno-orientado-a-objetos.md "mention")
+29. [metodologia-de-investigacion-y-descubrimiento-de-herramientas.md](metodologia-de-investigacion-y-descubrimiento-de-herramientas.md "mention")
 
