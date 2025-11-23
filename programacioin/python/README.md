@@ -50,4 +50,6 @@ layout:
 24. [funciones-alcance-scope-y-gestion-de-memoria.md](funciones-alcance-scope-y-gestion-de-memoria.md "mention")
 25. [fundamentos-del-manejo-de-excepciones.md](fundamentos-del-manejo-de-excepciones.md "mention")
 26. [buenas-practicas-y-tipologia-de-errores.md](buenas-practicas-y-tipologia-de-errores.md "mention")
+27. [ecosistema-python-y-actualizacion-continua.md](ecosistema-python-y-actualizacion-continua.md "mention")
+28. [metodologia-de-diseno-orientado-a-objetos.md](metodologia-de-diseno-orientado-a-objetos.md "mention")
 
