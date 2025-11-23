@@ -39,7 +39,6 @@
 ## Programacióin
 
 * [Python](programacioin/python/README.md)
-  * [Entornos Virtuales](programacioin/python/entornos-virtuales.md)
   * [Sintaxis vs. Semántica](programacioin/python/sintaxis-vs.-semantica.md)
   * [Tipos de Datos](programacioin/python/tipos-de-datos.md)
   * [Variables](programacioin/python/variables.md)
@@ -65,6 +64,12 @@
   * [Funciones - Alcance (Scope) y Gestión de Memoria](programacioin/python/funciones-alcance-scope-y-gestion-de-memoria.md)
   * [Fundamentos del Manejo de Excepciones](programacioin/python/fundamentos-del-manejo-de-excepciones.md)
   * [Buenas Prácticas y Tipología de Errores](programacioin/python/buenas-practicas-y-tipologia-de-errores.md)
+  * [Arquitectura de Módulos y Biblioteca Estándar](programacioin/python/arquitectura-de-modulos-y-biblioteca-estandar.md)
+  * [Mecanismos de Importación y Namespaces](programacioin/python/mecanismos-de-importacion-y-namespaces.md)
+  * [Alias y Buenas Prácticas de Importación](programacioin/python/alias-y-buenas-practicas-de-importacion.md)
+  * [Paquetes y Jerarquía](programacioin/python/paquetes-y-jerarquia.md)
+  * [Gestión de Paquetes y Librerías con pip](programacioin/python/gestion-de-paquetes-y-librerias-con-pip.md)
+  * [Entornos Virtuales](programacioin/python/entornos-virtuales.md)
   * [Ecosistema Python y Actualización Continua](programacioin/python/ecosistema-python-y-actualizacion-continua.md)
   * [Estrategias de Introspección y Documentación](programacioin/python/estrategias-de-introspeccion-y-documentacion.md)
   * [Metodología de Diseño Orientado a Objetos](programacioin/python/metodologia-de-diseno-orientado-a-objetos.md)
