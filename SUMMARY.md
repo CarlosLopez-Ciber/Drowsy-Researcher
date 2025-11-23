@@ -11,6 +11,7 @@
 
 * [Conceptos de Redes](network/conceptos-de-redes/README.md)
   * [Estructura y Gobernanza de Internet: Organizaciones y Registros Regionales](network/conceptos-de-redes/estructura-y-gobernanza-de-internet-organizaciones-y-registros-regionales.md)
+  * [Clasificación de las Redes por Alcance Geográfico](network/conceptos-de-redes/clasificacion-de-las-redes-por-alcance-geografico.md)
 
 ## 🔏 Seguridad de la Información
 
