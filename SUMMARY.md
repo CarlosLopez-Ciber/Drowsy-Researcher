@@ -59,6 +59,8 @@
   * [Datos Binarios](programacioin/python/datos-binarios.md)
   * [Control de Flujo: Sentencias Condicionales](programacioin/python/control-de-flujo-sentencias-condicionales.md)
   * [Control de Flujo Iterativo: Bucles](programacioin/python/control-de-flujo-iterativo-bucles.md)
+  * [Fundamentos de Funciones y Descomposición](programacioin/python/fundamentos-de-funciones-y-descomposicion.md)
+  * [Funciones - Parámetros y Argumentos](programacioin/python/funciones-parametros-y-argumentos.md)
 
 ## 🎮 CTFs
 

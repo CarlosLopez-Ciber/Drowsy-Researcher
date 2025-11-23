@@ -44,4 +44,6 @@ layout:
 18. [datos-binarios.md](datos-binarios.md "mention")
 19. [control-de-flujo-sentencias-condicionales.md](control-de-flujo-sentencias-condicionales.md "mention")
 20. [control-de-flujo-iterativo-bucles.md](control-de-flujo-iterativo-bucles.md "mention")
+21. [fundamentos-de-funciones-y-descomposicion.md](fundamentos-de-funciones-y-descomposicion.md "mention")
+22. [funciones-parametros-y-argumentos.md](funciones-parametros-y-argumentos.md "mention")
 
