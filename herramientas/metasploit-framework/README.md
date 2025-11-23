@@ -2,7 +2,7 @@
 description: >-
   Inicia tu aprendizaje en Ciberseguridad con Metasploit Framework. Entiende los
   conceptos clave de Exploit y Payload.
-icon: viruses
+icon: bomb
 cover: >-
   https://www.campusciberseguridad.com/wp-content/uploads/2024/11/Metasploit_La-herramienta-esencial-en-Ciberseguridad.jpg
 coverY: 0

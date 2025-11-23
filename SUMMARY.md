@@ -27,14 +27,14 @@
   * [Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social.md)
     * [Técnicas de Ingeniería Social](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/ingenieria-social/tecnicas-de-ingenieria-social.md)
 
-## Cursos
+## Herramientas
 
-* [Metasploit Framework](cursos/metasploit-framework/README.md)
-  * [Inicialización Correcta de Metasploit](cursos/metasploit-framework/inicializacion-correcta-de-metasploit.md)
-  * [Entendiendo los Módulos Clave de Metasploit](cursos/metasploit-framework/entendiendo-los-modulos-clave-de-metasploit.md)
-  * [Comandos básicos](cursos/metasploit-framework/comandos-basicos.md)
-  * [Comandos de Búsqueda](cursos/metasploit-framework/comandos-de-busqueda.md)
-  * [Gestión de Entornos de Trabajo (Workspaces)](cursos/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
+* [Metasploit Framework](herramientas/metasploit-framework/README.md)
+  * [Inicialización Correcta de Metasploit](herramientas/metasploit-framework/inicializacion-correcta-de-metasploit.md)
+  * [Entendiendo los Módulos Clave de Metasploit](herramientas/metasploit-framework/entendiendo-los-modulos-clave-de-metasploit.md)
+  * [Comandos básicos](herramientas/metasploit-framework/comandos-basicos.md)
+  * [Comandos de Búsqueda](herramientas/metasploit-framework/comandos-de-busqueda.md)
+  * [Gestión de Entornos de Trabajo (Workspaces)](herramientas/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
 
 ## Programacióin
 
@@ -61,6 +61,7 @@
   * [Control de Flujo Iterativo: Bucles](programacioin/python/control-de-flujo-iterativo-bucles.md)
   * [Fundamentos de Funciones y Descomposición](programacioin/python/fundamentos-de-funciones-y-descomposicion.md)
   * [Funciones - Parámetros y Argumentos](programacioin/python/funciones-parametros-y-argumentos.md)
+  * [Funciones - Salida de Datos y Resultados](programacioin/python/funciones-salida-de-datos-y-resultados.md)
 
 ## 🎮 CTFs
 
