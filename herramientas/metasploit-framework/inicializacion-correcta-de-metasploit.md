@@ -11,11 +11,9 @@ Ya sabes qué es Metasploit Framework y por qué es una herramienta esencial en 
 
 Metasploit no trabaja solo. Para almacenar hosts, servicios, _exploits_ utilizados, sesiones activas y credenciales (información vital en un _pentest_), requiere una base de datos de apoyo.
 
-Dominar la inicialización correcta es el primer paso para un trabajo profesional y ordenado. Aquí te explico los componentes clave y cómo ponerlos en marcha.
-
 ***
 
-### 1. Los Servicios de _Backend_: La Base de Datos
+### <mark style="color:yellow;">1. Los Servicios de</mark> <mark style="color:yellow;"></mark>_<mark style="color:yellow;">Backend</mark>_<mark style="color:yellow;">: La Base de Datos</mark>
 
 Para el funcionamiento óptimo de Metasploit, dos componentes son esenciales:
 
@@ -26,11 +24,11 @@ Para el funcionamiento óptimo de Metasploit, dos componentes son esenciales:
 
 ***
 
-### 2. Puesta en Marcha: Tres Pasos para Iniciar Metasploit
+### <mark style="color:yellow;">2. Puesta en Marcha: Tres Pasos para Iniciar Metasploit</mark>
 
 Asumiremos que estás utilizando un entorno de Linux (como Kali Linux) donde estos comandos son estándar:
 
-#### Paso 1: Iniciar el Servicio de PostgreSQL
+#### <mark style="color:$danger;">Paso 1: Iniciar el Servicio de PostgreSQL</mark>
 
 Como ya mencionamos, PostgreSQL debe estar activo para que Metasploit registre sus resultados.
 
@@ -50,7 +48,7 @@ Salida esperada: La salida debe mostrar una línea similar a `Active: active (ex
 
 _(Si deseas detener el servicio después de tu sesión de trabajo, usa: `sudo systemctl stop postgresql`)_
 
-#### Paso 2: Inicializar la Base de Datos de Metasploit (`msfdb`)
+#### <mark style="color:$danger;">Paso 2: Inicializar la Base de Datos de Metasploit (</mark><mark style="color:$danger;">`msfdb`</mark><mark style="color:$danger;">)</mark>
 
 Este paso es crucial, especialmente si es la primera vez que utilizas Metasploit o si has migrado de versión. El servicio `msfdb` configura las tablas necesarias en PostgreSQL y establece la conexión:Bash
 
@@ -72,7 +70,7 @@ Salida esperada: Debes ver la confirmación `Database Status: Connected`.
 
 _(Si deseas apagar la conexión con `msfdb`, puedes usar: `sudo msfdb stop`)_
 
-#### Paso 3: Iniciar Metasploit Framework Console
+#### <mark style="color:$danger;">Paso 3: Iniciar Metasploit Framework Console</mark>
 
 Una vez que has confirmado que PostgreSQL está activo y que `msfdb` reporta el estado Connected, ya estás listo para lanzar el entorno interactivo del Framework:
 
@@ -100,3 +98,4 @@ Durante el proceso de carga inicial, Metasploit realizará varias tareas importa
 ```bash
 banner
 ```
+

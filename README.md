@@ -7,7 +7,7 @@ coverY: 0
 
 Hola, soy **Carlos Lopez** y este es el espacio donde la curiosidad no tiene límites.
 
-Mi formación se cimienta en dos pilares: la Administración de Ciberseguridad en [IDAT](https://www.idat.edu.pe/) y la Computación Científica en la [Universidad Nacional Mayor de San Marcos](https://www.unmsm.edu.pe/). Esta doble visión me ha enseñado que la tecnología se nutre de la ciencia, la lógica y el pensamiento profundo. Soy un fanático del aprendizaje autodidacta y de la interconexión entre las disciplinas.
+Mi formación se cimienta en dos pilares: la Computación Científica en la [Universidad Nacional Mayor de San Marcos](https://www.unmsm.edu.pe/) y la Administración de Ciberseguridad en [IDAT](https://www.idat.edu.pe/). Esta doble visión me ha enseñado que la tecnología se nutre de la ciencia, la lógica y el pensamiento profundo. Soy un fanático del aprendizaje autodidacta y de la interconexión entre las disciplinas.
 
 ¿Qué encontrarás aquí?
 

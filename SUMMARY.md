@@ -7,6 +7,11 @@
   * [Canales de YouTube](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/canales-de-youtube.md)
   * [Recursos adicionales](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/recursos-adicionales.md)
 
+## Network
+
+* [Conceptos de Redes](network/conceptos-de-redes/README.md)
+  * [Estructura y Gobernanza de Internet: Organizaciones y Registros Regionales](network/conceptos-de-redes/estructura-y-gobernanza-de-internet-organizaciones-y-registros-regionales.md)
+
 ## 🔏 Seguridad de la Información
 
 * [Principios Fundamentales de la Seguridad de la Información](seguridad-de-la-informacion/principios-fundamentales-de-la-seguridad-de-la-informacion/README.md)
@@ -31,7 +36,7 @@
 
 * [Metasploit Framework](herramientas/metasploit-framework/README.md)
   * [Inicialización Correcta de Metasploit](herramientas/metasploit-framework/inicializacion-correcta-de-metasploit.md)
-  * [Entendiendo los Módulos Clave de Metasploit](herramientas/metasploit-framework/entendiendo-los-modulos-clave-de-metasploit.md)
+  * [Entendiendo los Módulos de Metasploit](herramientas/metasploit-framework/entendiendo-los-modulos-de-metasploit.md)
   * [Comandos básicos](herramientas/metasploit-framework/comandos-basicos.md)
   * [Comandos de Búsqueda](herramientas/metasploit-framework/comandos-de-busqueda.md)
   * [Gestión de Entornos de Trabajo (Workspaces)](herramientas/metasploit-framework/gestion-de-entornos-de-trabajo-workspaces.md)
