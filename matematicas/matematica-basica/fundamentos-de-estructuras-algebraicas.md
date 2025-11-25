@@ -13,10 +13,9 @@ graph TD
     D --> F[Operaciones binarias]
     F --> G[Estructuras algebraicas]
     G --> H[Ecuaciones]
-
-    style F fill:#f96,stroke:#333,stroke-width:2px
-    style G fill:#bbf,stroke:#333,stroke-width:2px
 ```
+
+
 
 En forma general y abstracta, podemos expresar una operación cualquiera designando los elementos con letras $a, b, c, \dots$ y las operaciones con signos arbitrarios tales como: $\ast$ (estrella), $\Delta$ (delta), $\circ$ (círculo), etc.
 
