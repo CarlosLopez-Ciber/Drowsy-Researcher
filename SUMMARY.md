@@ -102,3 +102,8 @@
   * [WriteUp: Breakout | VulnHub](ctfs/vulnhub/writeup-breakout-or-vulnhub.md)
 * [The Hacker Labs](ctfs/the-hacker-labs/README.md)
   * [WriteUp: Fruits | TheHackerLabs](ctfs/the-hacker-labs/writeup-fruits-or-thehackerlabs.md)
+
+## Matemáticas
+
+* [Matemática Básica](matematicas/matematica-basica/README.md)
+  * [Fundamentos de Estructuras Algebraicas](matematicas/matematica-basica/fundamentos-de-estructuras-algebraicas.md)
