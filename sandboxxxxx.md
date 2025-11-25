@@ -1,4 +1,8 @@
-# Fundamentos de Estructuras Algebraicas
+# SandBoxxxxx
+
+## Sand Boxxxxxxx
+
+## Fundamentos de Estructuras Algebraicas: Nociones Previas
 
 Para abordar el estudio de las estructuras algebraicas, es necesario establecer una jerarquía clara que parte desde la teoría de conjuntos hasta llegar a las ecuaciones. El siguiente esquema resume el camino lógico que seguiremos:
 
@@ -11,9 +15,12 @@ graph TD
     D --> F[Operaciones binarias]
     F --> G[Estructuras algebraicas]
     G --> H[Ecuaciones]
+
+    style F fill:#f96,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-En forma general y abstracta, podemos expresar una operación cualquiera designando los elementos con letras $a, b, c, \dots$ y las operaciones con signos arbitrarios tales como: $\ast$ (estrella), $\Delta$ (delta), $\circ$ (círculo), etc.
+En forma general y abstracta, podemos expresar una operación cualquiera designando los elementos con letras $$a, b, c, \dots$$ y las operaciones con signos arbitrarios tales como: $\ast$ (estrella), $\Delta$ (delta), $$\circ$$ (círculo), etc.
 
 Entonces, la expresión general de una operación binaria es:
 
@@ -50,14 +57,14 @@ $$(3, 2) \longmapsto 5$$
 
 Analicemos las propiedades fundamentales utilizando dos ejemplos paralelos: la multiplicación usual en los Racionales $(\mathbb{Q}, \cdot)$ y una operación abstracta "estrella" en un conjunto $C$ denotada como $(C, \ast)$.
 
-| **N°** | **Propiedad**                | **Multiplicación en Q: (Q,⋅)**                                                                                            | **Operación en C: (C,∗)**                                                    |
-| ------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| **1**  | **Ley de Cierre (Clausura)** | Si $\frac{2}{3} \in \mathbb{Q}$ y $\frac{1}{2} \in \mathbb{Q} \Rightarrow (\frac{2}{3} \cdot \frac{1}{2}) \in \mathbb{Q}$ | $\forall a, b \in C \Rightarrow (a \ast b) \in C$                            |
-| **2**  | **Ley Asociativa**           | $(\frac{1}{2} \cdot \frac{3}{5}) \cdot \frac{1}{4} = \frac{1}{2} \cdot (\frac{3}{5} \cdot \frac{1}{4})$                   | $(a \ast b) \ast c = a \ast (b \ast c)$                                      |
-| **3**  | **Elemento Neutro**          | <p>El neutro es el $1$:<br><br><br><br>$\frac{3}{4} \cdot 1 = 1 \cdot \frac{3}{4} = \frac{3}{4}$</p>                      | <p>Existe $e \in C$ tal que:<br><br><br><br>$a \ast e = e \ast a = a$</p>    |
-| **4**  | **Elemento Inverso**         | <p>$\frac{4}{3}$ es el inverso de $\frac{3}{4}$:<br><br><br><br>$\frac{3}{4} \cdot \frac{4}{3} = 1$</p>                   | <p>Existe $a' \in C$ tal que:<br><br><br><br>$a \ast a' = a' \ast a = e$</p> |
-| **5**  | **Ley Conmutativa**          | $\frac{2}{3} \cdot \frac{4}{5} = \frac{4}{5} \cdot \frac{2}{3}$                                                           | $a \ast b = b \ast a$                                                        |
-| **6**  | **Elemento Absorbente**      | <p>El absorbente es el $0$:<br><br><br><br>$\frac{3}{4} \cdot 0 = 0$</p>                                                  | <p>Existe $s \in C$ tal que:<br><br><br><br>$a \ast s = s \ast a = s$</p>    |
+| **N°** | **Propiedad**                | **Multiplicación en Q: (Q,⋅)**                                                                                               | **Operación en C: (C,∗)**                                                    |
+| ------ | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **1**  | **Ley de Cierre (Clausura)** | $$ Si \frac{2}{3} \in \mathbb{Q} y \frac{1}{2} \in \mathbb{Q} \Rightarrow (\frac{2}{3} \cdot \frac{1}{2}) \in \mathbb{Q}$ $$ | $\forall a, b \in C \Rightarrow (a \ast b) \in C$                            |
+| **2**  | **Ley Asociativa**           | $(\frac{1}{2} \cdot \frac{3}{5}) \cdot \frac{1}{4} = \frac{1}{2} \cdot (\frac{3}{5} \cdot \frac{1}{4})$                      | $(a \ast b) \ast c = a \ast (b \ast c)$                                      |
+| **3**  | **Elemento Neutro**          | <p>El neutro es el $1$:<br><br><br><br>$\frac{3}{4} \cdot 1 = 1 \cdot \frac{3}{4} = \frac{3}{4}$</p>                         | <p>Existe $e \in C$ tal que:<br><br><br><br>$a \ast e = e \ast a = a$</p>    |
+| **4**  | **Elemento Inverso**         | <p>$\frac{4}{3}$ es el inverso de $\frac{3}{4}$:<br><br><br><br>$\frac{3}{4} \cdot \frac{4}{3} = 1$</p>                      | <p>Existe $a' \in C$ tal que:<br><br><br><br>$a \ast a' = a' \ast a = e$</p> |
+| **5**  | **Ley Conmutativa**          | $\frac{2}{3} \cdot \frac{4}{5} = \frac{4}{5} \cdot \frac{2}{3}$                                                              | $a \ast b = b \ast a$                                                        |
+| **6**  | **Elemento Absorbente**      | <p>El absorbente es el $0$:<br><br><br><br>$\frac{3}{4} \cdot 0 = 0$</p>                                                     | <p>Existe $s \in C$ tal que:<br><br><br><br>$a \ast s = s \ast a = s$</p>    |
 
 #### 7. Ley uniforme
 
@@ -109,10 +116,3 @@ Se dice que una ley es idempotente cuando operar un elemento consigo mismo da co
 $$\forall a \in C, \quad a \ast a = a$$
 
 **Ejemplo:** La unión de conjuntos es idempotente ($A \cup A = A$), pero la suma numérica no lo es ($5 + 5 \neq 5$).
-
-
-
-
-
-
-
