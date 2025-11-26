@@ -1,7 +1,5 @@
 # El Marco de Soporte AAA
 
-## Gestión de Identidad y Acceso
-
 Para implementar eficazmente la Tríada CIA, se utiliza el marco AAA: **Autenticación, Autorización y Trazabilidad (Accounting)**.
 
 * **Autenticación (Authentication):** Es el proceso de **verificar la identidad** de un usuario, sistema o servicio. Responde a la pregunta: "¿Quién eres?".
