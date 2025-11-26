@@ -1,2 +1,0 @@
-# Matemática Básica
-

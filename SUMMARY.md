@@ -1,23 +1,8 @@
 # Table of contents
 
-* [👋 Introducción](README.md)
-  * [Computación Científica](introduccion/computacion-cientifica.md)
-* [🗺️ Los 3 Fundamentos que Debes Dominar Antes de Entrar en Ciberseguridad](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/README.md)
-  * [👨‍🎓 Plataformas/Casas Certificadoras](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/plataformas-casas-certificadoras.md)
-  * [Canales de YouTube](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/canales-de-youtube.md)
-  * [Recursos adicionales](los-3-fundamentos-que-debes-dominar-antes-de-entrar-en-ciberseguridad/recursos-adicionales.md)
-
-## Network
-
-* [Conceptos de Redes](network/conceptos-de-redes/README.md)
-  * [Estructura y Gobernanza de Internet: Organizaciones y Registros Regionales](network/conceptos-de-redes/estructura-y-gobernanza-de-internet-organizaciones-y-registros-regionales.md)
-  * [Clasificación de las Redes por Alcance Geográfico](network/conceptos-de-redes/clasificacion-de-las-redes-por-alcance-geografico.md)
-  * [Topologías de Red LAN: Arquitectura y Diseño Físico](network/conceptos-de-redes/topologias-de-red-lan-arquitectura-y-diseno-fisico.md)
-  * [Protocolos de Comunicación](network/conceptos-de-redes/protocolos-de-comunicacion.md)
-
 ## 🔏 Seguridad de la Información
 
-* [Conceptos de Seguridad de la Información](seguridad-de-la-informacion/conceptos-de-seguridad-de-la-informacion/README.md)
+* [Conceptos de Seguridad de la Información](README.md)
   * [Ciberseguridad, Seguridad Informática y de la Información](seguridad-de-la-informacion/conceptos-de-seguridad-de-la-informacion/ciberseguridad-seguridad-informatica-y-de-la-informacion/README.md)
     * [La Filosofía que Define la Cultura InfoSec](seguridad-de-la-informacion/conceptos-de-seguridad-de-la-informacion/ciberseguridad-seguridad-informatica-y-de-la-informacion/la-filosofia-que-define-la-cultura-infosec.md)
   * [La Tríada CIA](seguridad-de-la-informacion/conceptos-de-seguridad-de-la-informacion/la-triada-cia.md)
@@ -102,12 +87,3 @@
   * [WriteUp: Breakout | VulnHub](ctfs/vulnhub/writeup-breakout-or-vulnhub.md)
 * [The Hacker Labs](ctfs/the-hacker-labs/README.md)
   * [WriteUp: Fruits | TheHackerLabs](ctfs/the-hacker-labs/writeup-fruits-or-thehackerlabs.md)
-
-## Matemáticas
-
-* [Matemática Básica](matematicas/matematica-basica/README.md)
-  * [Fundamentos de Estructuras Algebraicas](matematicas/matematica-basica/fundamentos-de-estructuras-algebraicas.md)
-
-***
-
-* [SandBoxxxxx](sandboxxxxx.md)
