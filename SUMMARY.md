@@ -2,8 +2,7 @@
 
 ## 🎮 CTFs
 
-* [OverTheWire](README.md)
-* [HackMyVM](ctfs/hackmyvm/README.md)
+* [HackMyVM](README.md)
   * [WriteUp: Gift | HackMyVM](ctfs/hackmyvm/writeup-gift-or-hackmyvm.md)
   * [WriteUp: LookUp | HackMyVM](ctfs/hackmyvm/writeup-lookup-or-hackmyvm.md)
   * [WriteUp: Visions | HackMyVM](ctfs/hackmyvm/writeup-visions-or-hackmyvm.md)

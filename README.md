@@ -1,16 +1,9 @@
----
-hidden: true
----
+# HackMyVM
 
-# OverTheWire
+<h2 align="center"><mark style="color:yellow;">CTFs</mark></h2>
 
-> Enlace a la plataforma: [https://overthewire.org/wargames](https://overthewire.org/wargames/bandit/)
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a data-mention href="ctfs/hackmyvm/writeup-gift-or-hackmyvm.md">writeup-gift-or-hackmyvm.md</a></td><td><a href=".gitbook/assets/123.png">123.png</a></td></tr><tr><td><a data-mention href="ctfs/hackmyvm/writeup-visions-or-hackmyvm.md">writeup-visions-or-hackmyvm.md</a></td><td><a href=".gitbook/assets/123.png">123.png</a></td></tr></tbody></table>
 
-## ¿Qué es **OverTheWire?**
+***
 
-**OverTheWire** es una plataforma que ofrece _CTFs_ (Capture The Flag), es decir, retos de seguridad informática en forma de juegos. Cada juego está dividido en **niveles** y tu misión es encontrar una "flag" (una cadena de texto) que te permite avanzar al siguiente.
-
-En la lado izquierdo de la plataforma verás todos los CTFs con los que cuentan.
-
-**Cada juego de shell tiene su propio puerto SSH**\
-La información sobre cómo conectarse a cada juego usando SSH está disponible en la esquina superior izquierda de la página. Ten en cuenta que cada juego utiliza un puerto SSH diferente.
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><a data-mention href="ctfs/hackmyvm/writeup-lookup-or-hackmyvm.md">writeup-lookup-or-hackmyvm.md</a></td><td><a href=".gitbook/assets/gengar.png">gengar.png</a></td></tr></tbody></table>
